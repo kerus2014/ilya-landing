@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.link-icon{
+  display: flex;
+  align-items: center;
+
+  &:hover *{
+    fill:$primaryColor;
+  }
+
+  &:hover .arrow{
+    rotate: 45deg;
+  }
+
+}
+
+.arrow{
+  margin-top: 4px;
+  margin-left: 15px;
+  stroke: $primaryColor;
+  transition-duration: 0.25s;    
+}

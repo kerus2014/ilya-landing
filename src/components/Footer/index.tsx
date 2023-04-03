@@ -2,10 +2,10 @@ import { Container } from "../Container"
 
 export  const Footer = () => {
   return(
-    <header>
+    <footer>
       <Container>
-        asdf
+        footer
       </Container>
-    </header>
+    </footer>
   )
 }

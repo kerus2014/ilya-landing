@@ -2,10 +2,10 @@ import { Container } from "../Container"
 
 export  const Header = () => {
   return(
-    <div>
+    <header>
       <Container>
-        asdf
+        header
       </Container>
-    </div>
+    </header>
   )
 }
