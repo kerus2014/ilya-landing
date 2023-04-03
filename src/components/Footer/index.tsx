@@ -1,11 +1,9 @@
-import { Container } from "../Container"
+import { Container } from "../Container";
 
-export  const Footer = () => {
-  return(
+export const Footer = () => {
+  return (
     <footer>
-      <Container>
-        footer
-      </Container>
+      <Container>footer</Container>
     </footer>
-  )
-}
+  );
+};

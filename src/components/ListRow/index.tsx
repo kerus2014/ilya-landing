@@ -1,14 +1,14 @@
 import styles from "./index.module.scss";
 
-interface ListRow{
-  value1:string;
-  value2:string;
-  value3:string;
+interface ListRow {
+  value1: string;
+  value2: string;
+  value3: string;
 }
 
-export const ListRow = (props:ListRow) => {
-  const {value1,value2,value3} = props
-  return(
+export const ListRow = (props: ListRow) => {
+  const { value1, value2, value3 } = props;
+  return (
     <>
       <div className={styles["list-row"]}>
         <p className={styles["list-row__first-column"]}>{value1}</p>
@@ -17,8 +17,7 @@ export const ListRow = (props:ListRow) => {
           <p className={styles["list-row__grid-item_second"]}>{value3}</p>
         </div>
       </div>
-      <hr className={styles["line"]}/>
+      <hr className={styles["line"]} />
     </>
-    
-  )
-}
+  );
+};

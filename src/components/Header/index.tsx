@@ -1,11 +1,15 @@
-import { Container } from "../Container"
+import { Container } from "../Container";
+import Navbar from "../Navbar";
+import styles from "./index.module.scss";
 
-export  const Header = () => {
-  return(
+export const Header = () => {
+  return (
     <header>
       <Container>
-        header
+        <div className={styles.container}>
+          <Navbar />
+        </div>
       </Container>
     </header>
-  )
-}
+  );
+};
