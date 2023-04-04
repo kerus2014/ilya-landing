@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.footerLeftSide {
+  width: calc(100% / 12 * 7);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footerRightSide {
+  width: calc(100% / 12 * 4);
+  display: flex;
+  flex-direction: column;
+}
+
+.contactBlockContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactBlock {
+  width: 50%;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+.headerContainer {
+  background-color: black;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.navBarContainer {
+  max-width: calc(100% / 12 * 9);
+  width: 100%;
+}
