@@ -1,5 +1,9 @@
-import { LinkWithArrow } from "../../components/LinkWithArrow";
+import FeedBackBlock from "../../components/FeedBackBlock";
 
 export const Home = () => {
-  return <></>;
+  return (
+    <>
+      <FeedBackBlock />
+    </>
+  );
 };

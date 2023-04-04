@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.imageContainer {
+  width: calc(100% / 12 * 4);
+}
+
+.formContainer {
+  width: calc(100% / 12 * 8);
+}

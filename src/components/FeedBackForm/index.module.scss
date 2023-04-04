@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+$padding: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid $textColor;
+  padding-left: $padding;
+  height: 26px;
+}
+
+.textarea {
+  outline: 0;
+  resize: none;
+}
+
+.submit {
+  max-width: 430px;
+  height: 60px;
+  border: 1px solid $textColor;
+  background: transparent;
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    border-color: $primaryColor;
+  }
+  &:active {
+    border-color: $primaryColor;
+    background-color: $primaryColor;
+  }
+}
