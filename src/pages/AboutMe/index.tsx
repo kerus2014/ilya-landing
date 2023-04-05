@@ -2,10 +2,11 @@ import { Container } from "../../components/Container";
 import { Title } from "../../components/Title";
 import styles from "./index.module.scss";
 import photo from "../../assets/pics/фото.png";
+import interests from "../../assets/pics/about-interests.png";
 import { TitleWithBottomLine } from "../../components/TitleWithBottomLine";
 import { BlockTemplate } from "../../components/BlockTemplate";
 import { ListRow } from "../../components/ListRow";
-import FeedBackBlock from "../../components/FeedBackBlock";
+import { AboutInterstsItem } from "../../components/AboutInterestsItem";
 
 export const AboutMe = () => {
   return (
@@ -92,7 +93,31 @@ export const AboutMe = () => {
 
       </BlockTemplate>
 
-      <FeedBackBlock/>
+      <BlockTemplate className={styles.interests}>
+        <Title title="Мои интересы"/>
+        <p>В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. </p>
+        <div className={styles["interests__row"]}>
+          <div className={styles["interests__row-item"]}>
+            <AboutInterstsItem value="Альтернативный туризм"/>
+            <AboutInterstsItem value="Агро / Эко / Сельский туризм"/>
+            <AboutInterstsItem value="Маркетинг Дестинации, кластеры"/>
+            <AboutInterstsItem value="Монетизация"/>
+          </div>
+          <div className={styles["interests__row-item"]}>
+            <img src={interests} alt="" />
+          </div>
+          <div className={styles["interests__row-item"]}>
+            <AboutInterstsItem value="Travel Tech проекты"/>
+            <AboutInterstsItem value="Современные туристические продукты"/>
+            <AboutInterstsItem value="Режиссура и постановка впечатлений"/>
+            <AboutInterstsItem value="Событийный туризм"/>
+          </div>
+        </div>
+        <p>
+          В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм.
+          В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм. В сферу моих инетересов входит предпринимательство и туризм.
+        </p>
+      </BlockTemplate>
     </>
   );
 };
