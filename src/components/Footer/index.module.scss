@@ -1,18 +1,34 @@
+@import "../../styles/variables.scss";
+
 .container {
   display: flex;
   justify-content: space-between;
 }
+
 .footerLeftSide {
   width: calc(100% / 12 * 7);
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  & h3+h3{
+    margin-top: 10px;
+  }
 }
 
 .footerRightSide {
   width: calc(100% / 12 * 4);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  & h3{
+    margin-top: 10px;
+  }
+
+  & p{
+    margin-top: 10px;
+  }
 }
 
 .contactBlockContainer {
@@ -27,4 +43,36 @@
 .linksContainer {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+}
+
+.footer{
+  background-color: $textColor;
+  padding: 80px 0px;
+  
+  & .subtitle{
+    color: $primaryColor;
+  }
+
+  &__designer{
+    display: flex;
+    align-self: flex-start;
+    margin-top: 0px!important;
+    margin-bottom: 3px;
+  }
+
+  &__designer-logo{
+    scale: 1.3;
+    margin-left: 16px;
+    position: relative;
+    top: 6px;
+
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+}
+
+.footer *{
+  color: $textColorDark;
 }

@@ -1,3 +1,7 @@
+.feedback-block{
+  padding: 100px 0px;
+}
+
 .container {
   display: flex;
   gap: 20px;
@@ -5,6 +9,11 @@
 
 .imageContainer {
   width: calc(100% / 12 * 4);
+
+  img{
+    object-fit: cover;
+    height: 100%;
+  }
 }
 
 .formContainer {

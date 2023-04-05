@@ -1,9 +1,10 @@
+import { Button } from "../Button";
 import styles from "./index.module.scss";
 const FeedBackForm = () => {
   return (
     <div className={styles.container}>
-      <h3>
-        Давайте знакомится, встречаться и работать <b>вместе</b>!
+      <h3 className={styles.title}>
+        Давайте знакомится, встречаться и работать <b className={styles.title}>вместе</b>!
       </h3>
       <h4>Оставьте заявку, я Вам перезвоню для обсуждения сотрудничества:</h4>
       <form className={styles.formContainer} id="form" action="">
@@ -38,11 +39,8 @@ const FeedBackForm = () => {
           name="textarea"
           placeholder="Кратко опишите ваш запрос"
         ></textarea>
-        <input
-          className={styles.submit}
-          type="submit"
-          placeholder="Отправить"
-        />
+        <Button value="Отправить" className={styles.submit}/>
+        <p className={styles.conditions}>Отправляя форму, Вы соглашаетесь с Политикой конфиденциальности.</p>
       </form>
     </div>
   );
