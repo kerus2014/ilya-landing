@@ -22,7 +22,7 @@ const Navbar = () => {
       value: "Моя история",
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
-        navigate("");
+        navigate("/about");
       },
     },
     {
