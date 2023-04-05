@@ -1,10 +1,27 @@
-.headerContainer {
-  background-color: black;
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: white;
 }
+
+.mainLogoContainer{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
 }
+
 .navBarContainer {
   max-width: calc(100% / 12 * 9);
   width: 100%;

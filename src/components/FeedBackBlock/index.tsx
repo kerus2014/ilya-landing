@@ -4,16 +4,18 @@ import FeedBackForm from "../FeedBackForm";
 import styles from "./index.module.scss";
 const FeedBackBlock = () => {
   return (
-    <Container>
-      <div className={styles.container}>
-        <div className={styles.imageContainer}>
-          <img src={logo} alt="feedBackLogo" />
+    <div className={styles["feedback-block"]}>
+      <Container>
+        <div className={styles.container}>
+          <div className={styles.imageContainer}>
+            <img src={logo} alt="feedBackLogo" />
+          </div>
+          <div className={styles.formContainer}>
+            <FeedBackForm />
+          </div>
         </div>
-        <div className={styles.formContainer}>
-          <FeedBackForm />
-        </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 
