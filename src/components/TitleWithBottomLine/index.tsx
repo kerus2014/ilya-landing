@@ -1,10 +1,14 @@
 import { Title } from "../Title";
 import styles from "./index.module.scss";
 
-export const TitleWithBottomLine = () => {
+interface TitleWithBottomLine{
+  title:string;
+}
+
+export const TitleWithBottomLine = (props:TitleWithBottomLine) => {
   return(
     <div>
-      <Title title="Контакты"/>
+      <Title title={props.title}/>
       <hr className={styles.line}/>
     </div>
   )
