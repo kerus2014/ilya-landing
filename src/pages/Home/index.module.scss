@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.banner {
+  // display: flex;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__container {
+    display: flex;
+  }
+  &__subtitle {
+    font-size: 36px;
+    color: $primaryColor;
+    padding-bottom: 46px;
+  }
+  &__button-container {
+    margin-top: auto;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.history {
+  padding: 100px 0px;
+  // background-color: $textColor;
+  // color: white;
+}
+
+.cooperation {
+  &__card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+}

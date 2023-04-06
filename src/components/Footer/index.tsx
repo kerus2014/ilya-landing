@@ -17,7 +17,9 @@ export const Footer = () => {
                 Или Вы просто хотили пообщаться на тему предпринимательства и
                 туризма?
               </h3>
-              <h3 className={styles.subtitle}>Буду рад быть с Вами на связи!</h3>
+              <h3 className={styles.subtitle}>
+                Буду рад быть с Вами на связи!
+              </h3>
             </div>
             <div className={styles.footerLeftSide_bot}>
               <Navbar />
@@ -35,7 +37,9 @@ export const Footer = () => {
                   <p>+37529555425</p>
                 </div>
               </div>
-              <h3 className={styles.subtitle}>Будем на связи в социальных сетях:</h3>
+              <h3 className={styles.subtitle}>
+                Будем на связи в социальных сетях:
+              </h3>
               <div className={styles.linksContainer}>
                 <Link value={"Facebook"} />
                 <Link value={"Instagram"} />
@@ -45,7 +49,7 @@ export const Footer = () => {
             </div>
             <p className={styles["footer__designer"]}>
               Дизайн сайта разработан
-              <DesignerLogo className={styles["footer__designer-logo"]}/>
+              <DesignerLogo className={styles["footer__designer-logo"]} />
             </p>
           </div>
         </div>
