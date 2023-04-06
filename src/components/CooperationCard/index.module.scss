@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid $primaryColor;
+  padding: 30px 0;
+  &__image {
+    width: calc(100% / 12 * 1);
+    min-width: 82px;
+  }
+  &__title {
+    width: calc(100% / 12 * 3);
+  }
+  &__subtitle {
+    width: calc(100% / 12 * 6);
+  }
+}

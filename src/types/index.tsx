@@ -16,3 +16,27 @@ export interface INavbarData {
   value: NavLinkValue;
   handler: (value: NavLinkValue) => void;
 }
+
+interface ICard {
+  image: any;
+  title?: string;
+  subtitle: string;
+}
+
+export interface IProjectCard extends ICard {
+  text: string;
+  firstLinkValue: string;
+  firstLinkPath: string;
+  secondLinkPath: string;
+}
+
+export interface ICooperationCard extends ICard {
+  linkPath: string;
+}
+
+export interface IBlogCardData {
+  image: any;
+  date: string;
+  text: string;
+  type: string;
+}
