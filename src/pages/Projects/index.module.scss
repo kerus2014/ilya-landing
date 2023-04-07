@@ -1,0 +1,12 @@
+.projects{
+  display: flex;
+  padding-top: 40px;
+
+  &__nav-column{
+    margin-top: -10px;
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+}

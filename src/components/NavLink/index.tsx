@@ -12,8 +12,8 @@ const NavLink = (props: IProps) => {
 
   return (
     <li
-      className={cn(styles.link, {
-        [styles.activeLink]: activeLink === value,
+      className={cn("navLink", {
+        ["activeNavLink"]: activeLink === value,
       })}
       onClick={() => handler(value)}
     >

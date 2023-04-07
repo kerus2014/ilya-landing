@@ -7,6 +7,10 @@ import { Cases } from "./pages/Cases";
 import { Contacts } from "./pages/Contacts";
 import { Projects } from "./pages/Projects";
 import { WorkWithUs } from "./pages/WorkWithUs";
+import { Etno } from "./pages/Projects/Etno";
+import { AgroTourism } from "./pages/Projects/AgroTourismPro";
+import { PixelLab } from "./pages/Projects/PixelLab";
+import { TravelTech } from "./pages/Projects/TravelTech";
 
 function App() {
   return (
@@ -17,7 +21,12 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="cases" element={<Cases />} />
         <Route path="contacts" element={<Contacts />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="projects" element={<Projects />}>
+          <Route path="etno" element={<Etno />} />
+          <Route path="agro" element={<AgroTourism />} />
+          <Route path="pixel" element={<PixelLab />} />
+          <Route path="travel" element={<TravelTech />} />
+        </Route> 
         <Route path="cooperation" element={<WorkWithUs />} />
       </Route>
     </Routes>

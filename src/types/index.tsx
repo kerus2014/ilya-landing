@@ -40,3 +40,16 @@ export interface IBlogCardData {
   text: string;
   type: string;
 }
+
+export interface ICaseCard{
+  id:string,
+  image:string,
+  title:string,
+  description:string,
+  navigatePath: string
+}
+
+export interface imagesData{
+  id:string,
+  image:string
+}
