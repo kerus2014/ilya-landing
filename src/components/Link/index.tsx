@@ -3,13 +3,14 @@ import styles from "./index.module.scss";
 
 interface ILink extends ClassName {
   value: string;
+  href?:string;
 }
 
 export const Link = (props: ILink) => {
-  const { value, className } = props;
+  const { value, className, href } = props;
   return (
-    <div className={className ? `${styles.link} ${className}` : styles.link}>
+    <a href={href} className={className ? `${styles.link} ${className}` : styles.link}>
       {value}
-    </div>
+    </a>
   );
 };

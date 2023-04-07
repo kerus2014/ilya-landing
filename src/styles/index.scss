@@ -16,3 +16,21 @@ img {
 main {
   margin-top: 64px;
 }
+
+.navLink {
+  padding: 10px 0px;
+  cursor: pointer;
+  opacity: 0.6;
+
+  & *{
+    color: $textColor;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.activeNavLink {
+  opacity: 1;
+}

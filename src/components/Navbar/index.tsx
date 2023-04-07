@@ -30,7 +30,7 @@ const Navbar = () => {
       value: "Проекты",
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
-        navigate("");
+        navigate("/projects");
       },
     },
     {
