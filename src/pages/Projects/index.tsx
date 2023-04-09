@@ -2,16 +2,12 @@ import { NavLink, Outlet } from "react-router-dom";
 import styles from "./index.module.scss";
 import { BlockTemplate } from "../../components/BlockTemplate";
 import { TitleWithBottomLine } from "../../components/TitleWithBottomLine";
-
-interface ProjectsNavData{
-  id: number,
-  value: string,
-  to:string
-}
+import { InnerNavData } from "../../types";
+import { BlockWithNav } from "../../components/BlockWithNav";
 
 export const Projects = () => {
 
-  const navbarData: ProjectsNavData[] = [
+  const navbarData: InnerNavData[] = [
     {
       id: 1,
       value: "Сувениры со смыслом Etno.by",
@@ -35,16 +31,6 @@ export const Projects = () => {
   ];
 
   return (
-    <BlockTemplate>
-      <TitleWithBottomLine title="Проекты"/>
-      <div className={styles.projects}>
-        <div className={styles["projects__nav-column"]}>
-          {navbarData.map((el,index) => {
-            return <NavLink key={index.toString()} to={el.to} className={(({isActive}) => isActive ? "navLink activeNavLink" : "navLink")}>{el.value}</NavLink>
-          })}
-        </div>
-        <Outlet/>
-      </div>
-    </BlockTemplate>
+    <BlockWithNav title="Проекты" navData={navbarData}/>
   );
 };

@@ -53,3 +53,9 @@ export interface imagesData{
   id:string,
   image:string
 }
+
+export interface InnerNavData{
+  id: number,
+  value: string,
+  to:string
+}
