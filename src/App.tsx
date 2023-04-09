@@ -11,6 +11,12 @@ import { Etno } from "./pages/Projects/Etno";
 import { AgroTourism } from "./pages/Projects/AgroTourismPro";
 import { PixelLab } from "./pages/Projects/PixelLab";
 import { TravelTech } from "./pages/Projects/TravelTech";
+import { Services } from "./pages/Services";
+import { Audit } from "./pages/Services/Audit";
+import { Consulting } from "./pages/Services/Consulting";
+import { Strategy } from "./pages/Services/Strategy";
+import { Organization } from "./pages/Services/Organization";
+import { ProjectSupport } from "./pages/Services/ProjectSupport";
 
 function App() {
   return (
@@ -27,7 +33,15 @@ function App() {
           <Route path="pixel" element={<PixelLab />} />
           <Route path="travel" element={<TravelTech />} />
         </Route> 
-        <Route path="cooperation" element={<WorkWithUs />} />
+        <Route path="cooperation" element={<WorkWithUs />}/>
+        <Route path="partners" element={<Services />} />
+        <Route path="services" element={<Services />}>
+          <Route path="audit" element={<Audit />} />
+          <Route path="consulting" element={<Consulting />} />
+          <Route path="strategy" element={<Strategy />} />
+          <Route path="organization" element={<Organization />} />
+          <Route path="project_support" element={<ProjectSupport />} />
+        </Route>
       </Route>
     </Routes>
   );

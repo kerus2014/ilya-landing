@@ -1,0 +1,28 @@
+.audit{
+
+  &__title{
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 15px;
+  }
+
+  &__subtitle{
+    margin-top: 20px;
+  }
+
+  &__text{
+    font-weight: 300;
+    padding-top: 5px;
+
+    & li{
+      list-style-type: disc;
+      margin-left: 30px;
+      font-weight: 300;
+    }
+  }
+
+  &__text:nth-last-child(2){
+    padding-top: 20px;
+  }
+
+}

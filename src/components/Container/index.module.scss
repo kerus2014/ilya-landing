@@ -2,6 +2,12 @@
   width: 1200px;
   margin: 0 auto;
 
+  @media (max-width:1256px) {
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+  }  
+
   @media (max-width:1000px) {
     width: 100%;
     padding-left: 28px;

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { INavbarData, NavLinkValue } from "../../types";
+import { ClassName, INavbarData, NavLinkValue } from "../../types";
 import { useNavigate } from "react-router-dom";
 import NavLink from "../NavLink";
 import styles from "./index.module.scss";
 
-const Navbar = () => {
+const Navbar = (props:ClassName) => {
   const [activeLink, setActiveLink] = useState<NavLinkValue>("Главная");
   const navigate = useNavigate();
 
@@ -54,7 +54,7 @@ const Navbar = () => {
       value: "Сотрудничество",
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
-        navigate("");
+        navigate("/services");
       },
     },
     {
@@ -68,7 +68,7 @@ const Navbar = () => {
   ];
 
   return (
-    <ul className={styles.container}>
+    <ul className={props.className ? `${styles.container} ${props.className}` : styles.container}>
       {navbarData.map(({ id, value, handler }) => (
         <NavLink
           key={id}
