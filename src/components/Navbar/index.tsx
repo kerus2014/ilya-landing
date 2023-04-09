@@ -30,7 +30,7 @@ const Navbar = () => {
       value: "Проекты",
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
-        navigate("/projects");
+        navigate("/projects/etno");
       },
     },
     {
@@ -38,7 +38,7 @@ const Navbar = () => {
       value: "Кейсы",
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
-        navigate("");
+        navigate("/cases/category1");
       },
     },
     {

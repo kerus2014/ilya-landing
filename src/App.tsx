@@ -11,6 +11,7 @@ import { Etno } from "./pages/Projects/Etno";
 import { AgroTourism } from "./pages/Projects/AgroTourismPro";
 import { PixelLab } from "./pages/Projects/PixelLab";
 import { TravelTech } from "./pages/Projects/TravelTech";
+import Category1 from "./pages/Cases/Category1";
 
 function App() {
   return (
@@ -19,14 +20,18 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<AboutMe />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="cases" element={<Cases />} />
-        <Route path="contacts" element={<Contacts />} />
         <Route path="projects" element={<Projects />}>
           <Route path="etno" element={<Etno />} />
           <Route path="agro" element={<AgroTourism />} />
           <Route path="pixel" element={<PixelLab />} />
           <Route path="travel" element={<TravelTech />} />
-        </Route> 
+        </Route>
+        <Route path="cases" element={<Cases />}>
+          <Route path="category1" element={<Category1 />} />
+          <Route path="category2" element={<Category1 />} />
+          <Route path="category3" element={<Category1 />} />
+          <Route path="category4" element={<Category1 />} />
+        </Route>
         <Route path="cooperation" element={<WorkWithUs />} />
       </Route>
     </Routes>
