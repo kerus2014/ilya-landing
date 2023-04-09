@@ -62,7 +62,7 @@ const Navbar = () => {
       value: "Контакты",
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
-        navigate("");
+        navigate("/contacts");
       },
     },
   ];
