@@ -79,7 +79,7 @@ export const Home = () => {
         />
 
         <div className={styles["cooperation__card-container"]}>
-          {blogCardData.map((elem, index) => (
+          {blogCardData.slice(0, 4).map((elem, index) => (
             <BlogCard key={index} card={elem} />
           ))}
         </div>

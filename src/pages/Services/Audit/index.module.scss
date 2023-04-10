@@ -1,0 +1,17 @@
+.audit {
+  &__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    margin-bottom: 7px;
+  }
+  &__text {
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  &__list {
+    list-style: inside;
+    list-style-position: outside;
+  }
+}

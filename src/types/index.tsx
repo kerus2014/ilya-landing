@@ -2,7 +2,7 @@ export interface ClassName {
   className?: string;
 }
 
-export type NavLinkValue =
+export type NavLinkValueType =
   | "Главная"
   | "Моя история"
   | "Проекты"
@@ -13,8 +13,8 @@ export type NavLinkValue =
 
 export interface INavbarData {
   id: number;
-  value: NavLinkValue;
-  handler: (value: NavLinkValue) => void;
+  value: NavLinkValueType;
+  handler: (value: NavLinkValueType) => void;
 }
 
 interface ICard {
@@ -35,27 +35,29 @@ export interface ICooperationCard extends ICard {
 }
 
 export interface IBlogCardData {
+  id: number;
   image: any;
   date: string;
   text: string;
   type: string;
+  path: string;
 }
 
-export interface ICaseCard{
-  id:string,
-  image:string,
-  title:string,
-  description:string,
-  navigatePath: string
+export interface ICaseCard {
+  id: string;
+  image: string;
+  title: string;
+  description: string;
+  navigatePath: string;
 }
 
-export interface imagesData{
-  id:string,
-  image:string
+export interface imagesData {
+  id: string;
+  image: string;
 }
 
-export interface InnerNavData{
-  id: number,
-  value: string,
-  to:string
+export interface InnerNavData {
+  id: number;
+  value: string;
+  to: string;
 }

@@ -10,7 +10,7 @@ export const TitleWithBottomLine = (props: ITitleWithBottomLine) => {
   return (
     <div>
       <Title title={props.title} />
-      {props.subtitle && <h3>{props.subtitle}</h3>}
+      {props.subtitle && <h3 className={styles.subtitle}>{props.subtitle}</h3>}
       <hr className={styles.line} />
     </div>
   );

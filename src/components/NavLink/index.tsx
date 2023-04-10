@@ -1,11 +1,11 @@
-import { NavLinkValue } from "../../types";
+import { NavLinkValueType } from "../../types";
 import cn from "classnames";
 import styles from "./index.module.scss";
 
 interface IProps {
-  value: NavLinkValue;
-  handler: (value: NavLinkValue) => void;
-  activeLink: NavLinkValue;
+  value: NavLinkValueType;
+  handler: (value: NavLinkValueType) => void;
+  activeLink: NavLinkValueType;
 }
 const NavLink = (props: IProps) => {
   const { value, handler, activeLink } = props;
@@ -13,7 +13,7 @@ const NavLink = (props: IProps) => {
   return (
     <li
       className={cn("navLink", {
-        ["activeNavLink"]: activeLink === value,
+        activeNavLink: activeLink === value,
       })}
       onClick={() => handler(value)}
     >
