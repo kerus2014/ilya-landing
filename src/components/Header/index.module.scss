@@ -1,6 +1,12 @@
+@import "../../styles/variables.scss";
+
 .header {
   position: fixed;
+  z-index: 2;
   width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
   top: 0px;
   background-color: white;
 }
@@ -19,10 +25,121 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  // padding: 10px 0px;
 }
 
 .navBarContainer {
   max-width: calc(100% / 12 * 9);
   width: 100%;
+
+  @media (max-width:1000px) {
+    display: none;
+  }
+
+}
+
+.hamburger{
+
+  display: none;
+
+  @media (max-width:1000px) {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  
+
+  &:hover{
+    opacity: 0.5;
+  }
+
+  & div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  & span{
+    display: block;
+    width: 33px;
+    height: 2px;
+    position: relative;
+    background-color: $textColor;
+    border-radius: 3px;
+    z-index: 1;
+    transition-duration: 0.35s;
+  }
+
+  & span:last-child{
+    width: 70%;
+  }
+
+  & span+span{
+    margin-top: 5px;
+  }
+
+  &__active{
+
+    & span+span{
+      margin-top: 0px;
+    }
+
+    & span:first-child{
+      position: absolute;
+      rotate: -135deg;
+    }
+
+    & span:nth-child(2){
+      rotate: -135deg;
+      height: 0px;
+    }
+
+    & span:last-child{
+      position: absolute;
+      width: 100%;
+      rotate: 135deg;
+    }
+
+  }
+}
+
+.hamburger-menu{
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  height: 0px;
+  left: 0px;
+  background-color: white;
+  transition: 0.25s;
+
+  &__list{
+    flex-direction: column;
+    position: relative;
+
+    & li{
+      top:-50px;
+      z-index: -1;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      transition-duration: 0.25s;
+    }
+  }
+
+  &__active{
+    height: calc(100vh - 64px);
+
+    & li{
+      position: relative;
+      z-index: 3;
+      top:0px;
+      transform: translate(0, 0);
+    }
+  }
+
 }

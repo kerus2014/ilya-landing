@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .banner {
-  // display: flex;
+  display: flex;
   &__left {
     display: flex;
     flex-direction: column;
@@ -13,6 +13,7 @@
   }
   &__subtitle {
     font-size: 36px;
+    line-height: 44px;
     color: $primaryColor;
     padding-bottom: 46px;
   }
@@ -21,7 +22,36 @@
   }
   &__links {
     display: flex;
+    max-width: 392px;
+    margin: 20px auto 0;
     justify-content: space-around;
+  }
+
+  &__photo-container{
+    height: 400px;
+
+    @media (max-width:1256px) {
+      height: 496px;
+    }
+
+    @media (max-width:1000px) {
+      height: 400px;
+    }
+
+
+    & img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__right{
+    flex:1 0 40%;
+    margin-left: 40px;
+
+    @media (max-width:1256px) {
+      flex:1 0 50%;
+    }
   }
 }
 .history {

@@ -1,7 +1,3 @@
-import { NavLink, Outlet } from "react-router-dom";
-import styles from "./index.module.scss";
-import { BlockTemplate } from "../../components/BlockTemplate";
-import { TitleWithBottomLine } from "../../components/TitleWithBottomLine";
 import { InnerNavData } from "../../types";
 import { BlockWithNav } from "../../components/BlockWithNav";
 

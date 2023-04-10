@@ -3,8 +3,17 @@ import Navbar from "../Navbar";
 import mainLogo from "../../assets/pics/mainLogo.png";
 import styles from "./index.module.scss";
 import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { CHANGE_MENU_STATE, changeMenuStateAction } from "../../reduxTools/burgerMenu/actions";
+import { useSelector } from "react-redux";
+import { AppState } from "../../reduxTools/store";
+import cn from "classnames";
+
 
 export const Header = () => {
+  const isBurgerOpen = useSelector((state:AppState) => state.burgerMenu.isOpen)
+  const dispatch = useDispatch()
+
   return (
     <header className={styles.header}>
       <Container>
@@ -14,6 +23,16 @@ export const Header = () => {
           </NavLink>
           <div className={styles.navBarContainer}>
             <Navbar />
+          </div>
+          <div className={cn(styles.hamburger, { [styles["hamburger__active"]]: isBurgerOpen === true, })} onClick={() => dispatch(changeMenuStateAction())}>
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div className={cn(styles["hamburger-menu"], {[styles["hamburger-menu__active"]]: isBurgerOpen === true, })}>
+            <Navbar className={styles["hamburger-menu__list"]}/>
           </div>
         </div>
       </Container>

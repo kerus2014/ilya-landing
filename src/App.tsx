@@ -11,12 +11,14 @@ import { Etno } from "./pages/Projects/Etno";
 import { AgroTourism } from "./pages/Projects/AgroTourismPro";
 import { PixelLab } from "./pages/Projects/PixelLab";
 import { TravelTech } from "./pages/Projects/TravelTech";
-import Category1 from "./pages/Cases/Category1";
-import Events from "./pages/Blog/Events";
-import SelectedEvent from "./pages/Blog/Events/SelectedEvent";
-import FarmsteadOwners from "./pages/WorkWithUs/FarmsteadOwners";
-import Audit from "./pages/Services/Audit";
-import Services from "./pages/Services";
+
+import { Services } from "./pages/Services";
+import { Audit } from "./pages/Services/Audit";
+import { Consulting } from "./pages/Services/Consulting";
+import { Strategy } from "./pages/Services/Strategy";
+import { Organization } from "./pages/Services/Organization";
+import { ProjectSupport } from "./pages/Services/ProjectSupport";
+
 
 function App() {
   return (
@@ -37,24 +39,18 @@ function App() {
           <Route path="agro" element={<AgroTourism />} />
           <Route path="pixel" element={<PixelLab />} />
           <Route path="travel" element={<TravelTech />} />
-        </Route>
-        <Route path="cases" element={<Cases />}>
-          <Route path="category1" element={<Category1 />} />
-          <Route path="category2" element={<Category1 />} />
-          <Route path="category3" element={<Category1 />} />
-          <Route path="category4" element={<Category1 />} />
-        </Route>
-        <Route path="cooperation" element={<WorkWithUs />}>
-          <Route path="farmsteadowners" element={<FarmsteadOwners />} />
-        </Route>
+
+        </Route> 
+        <Route path="cooperation" element={<WorkWithUs />}/>
+        <Route path="partners" element={<Services />} />
         <Route path="services" element={<Services />}>
           <Route path="audit" element={<Audit />} />
-          <Route path="consultation" element={<Audit />} />
-          <Route path="strategy" element={<Audit />} />
-          <Route path="organization" element={<Audit />} />
-          <Route path="projectsupport" element={<Audit />} />
+          <Route path="consulting" element={<Consulting />} />
+          <Route path="strategy" element={<Strategy />} />
+          <Route path="organization" element={<Organization />} />
+          <Route path="project_support" element={<ProjectSupport />} />
         </Route>
-        <Route path="contacts" element={<Contacts />} />
+
       </Route>
     </Routes>
   );

@@ -33,7 +33,9 @@ export const Home = () => {
             </div>
           </div>
           <div className={styles["banner__right"]}>
-            <img src={photo} alt="photo1" />
+            <div className={styles["banner__photo-container"]}>
+              <img src={photo} alt="photo1" />
+            </div>
             <div className={styles["banner__links"]}>
               <Link value={"Facebook"} />
               <Link value={"Instagram"} />
