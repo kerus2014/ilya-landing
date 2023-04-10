@@ -18,7 +18,10 @@ import { Consulting } from "./pages/Services/Consulting";
 import { Strategy } from "./pages/Services/Strategy";
 import { Organization } from "./pages/Services/Organization";
 import { ProjectSupport } from "./pages/Services/ProjectSupport";
-
+import Events from "./pages/Blog/Events";
+import SelectedEvent from "./pages/Blog/Events/SelectedEvent";
+import Category1 from "./pages/Cases/Category1";
+import FarmsteadOwners from "./pages/WorkWithUs/FarmsteadOwners";
 
 function App() {
   return (
@@ -29,7 +32,6 @@ function App() {
         <Route path="blog" element={<Blog />}>
           <Route path="events" element={<Events />} />
           <Route path="events/:id" element={<SelectedEvent />} />
-
           <Route path="tourism" element={<SelectedEvent />} />
           <Route path="business" element={<SelectedEvent />} />
           <Route path="myexperience" element={<SelectedEvent />} />
@@ -39,9 +41,10 @@ function App() {
           <Route path="agro" element={<AgroTourism />} />
           <Route path="pixel" element={<PixelLab />} />
           <Route path="travel" element={<TravelTech />} />
-
-        </Route> 
-        <Route path="cooperation" element={<WorkWithUs />}/>
+        </Route>
+        <Route path="cooperation" element={<WorkWithUs />}>
+          <Route path="farmsteadowners" element={<FarmsteadOwners />} />
+        </Route>
         <Route path="partners" element={<Services />} />
         <Route path="services" element={<Services />}>
           <Route path="audit" element={<Audit />} />
@@ -50,7 +53,13 @@ function App() {
           <Route path="organization" element={<Organization />} />
           <Route path="project_support" element={<ProjectSupport />} />
         </Route>
-
+        <Route path="cases" element={<Cases />}>
+          <Route path="category1" element={<Category1 />} />
+          <Route path="category2" element={<AgroTourism />} />
+          <Route path="category3" element={<PixelLab />} />
+          <Route path="category4" element={<TravelTech />} />
+        </Route>
+        <Route path="contacts" element={<Contacts />} />
       </Route>
     </Routes>
   );
