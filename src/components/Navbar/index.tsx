@@ -1,13 +1,16 @@
 import { useState } from "react";
-import { ClassName, INavbarData, NavLinkValue } from "../../types";
+
+import { ClassName, INavbarData, NavLinkValueType } from "../../types";
+
 import { useNavigate } from "react-router-dom";
 import NavLink from "../NavLink";
 import styles from "./index.module.scss";
 import { useDispatch } from "react-redux";
 import { closeMenuStateAction } from "../../reduxTools/burgerMenu/actions";
 
-const Navbar = (props:ClassName) => {
-  const [activeLink, setActiveLink] = useState<NavLinkValue>("Главная");
+const Navbar = (props: ClassName) => {
+  const [activeLink, setActiveLink] = useState<NavLinkValueType>("Главная");
+
   const navigate = useNavigate();
   const dispatch = useDispatch()
 
@@ -15,7 +18,7 @@ const Navbar = (props:ClassName) => {
     {
       id: 1,
       value: "Главная",
-      handler: (value: NavLinkValue) => {
+      handler: (value: NavLinkValueType) => {
         setActiveLink(value);
         navigate("");
         dispatch(closeMenuStateAction())
@@ -24,7 +27,7 @@ const Navbar = (props:ClassName) => {
     {
       id: 2,
       value: "Моя история",
-      handler: (value: NavLinkValue) => {
+      handler: (value: NavLinkValueType) => {
         setActiveLink(value);
         navigate("/about");
         dispatch(closeMenuStateAction())
@@ -33,34 +36,34 @@ const Navbar = (props:ClassName) => {
     {
       id: 3,
       value: "Проекты",
-      handler: (value: NavLinkValue) => {
+      handler: (value: NavLinkValueType) => {
         setActiveLink(value);
-        navigate("/projects");
         dispatch(closeMenuStateAction())
+        navigate("/projects/etno");
       },
     },
     {
       id: 4,
       value: "Кейсы",
-      handler: (value: NavLinkValue) => {
+      handler: (value: NavLinkValueType) => {
         setActiveLink(value);
-        navigate("");
         dispatch(closeMenuStateAction())
+        navigate("/cases/category1");
       },
     },
     {
       id: 5,
       value: "Блог",
-      handler: (value: NavLinkValue) => {
+      handler: (value: NavLinkValueType) => {
         setActiveLink(value);
-        navigate("");
         dispatch(closeMenuStateAction())
+        navigate("/blog/events");
       },
     },
     {
       id: 6,
       value: "Сотрудничество",
-      handler: (value: NavLinkValue) => {
+      handler: (value: NavLinkValueType) => {
         setActiveLink(value);
         navigate("/services");
         dispatch(closeMenuStateAction())
@@ -69,7 +72,7 @@ const Navbar = (props:ClassName) => {
     {
       id: 7,
       value: "Контакты",
-      handler: (value: NavLinkValue) => {
+      handler: (value: NavLinkValueType) => {
         setActiveLink(value);
         navigate("/contacts");
         dispatch(closeMenuStateAction())
@@ -78,7 +81,13 @@ const Navbar = (props:ClassName) => {
   ];
 
   return (
-    <ul className={props.className ? `${styles.container} ${props.className}` : styles.container}>
+    <ul
+      className={
+        props.className
+          ? `${styles.container} ${props.className}`
+          : styles.container
+      }
+    >
       {navbarData.map(({ id, value, handler }) => (
         <NavLink
           key={id}
