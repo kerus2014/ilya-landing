@@ -2,24 +2,70 @@
 
 .banner {
   display: flex;
-  &__left {
-    display: flex;
+  padding-bottom: 100px;
+
+  @media (max-width:850px) {
     flex-direction: column;
-    justify-content: space-around;
+  }
+
+  &__left {
+
+    @media (max-width:935px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p{
+
+      @media (max-width:850px) {
+        margin-top: 40px;
+      }
+    }
+
+    
   }
 
   &__container {
     display: flex;
+
+    @media (max-width:850px) {
+      display: block;
+    }
   }
+
   &__subtitle {
     font-size: 36px;
     line-height: 44px;
     color: $primaryColor;
-    padding-bottom: 46px;
+    padding-bottom: 40px;
+
+    @media (max-width:935px) {
+      padding-bottom: auto;
+    }
+
+    @media (max-width:576px) {
+      padding-bottom: auto;
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
+
   &__button-container {
-    margin-top: auto;
+    padding-top: 40px;
+
+    @media (max-width:935px) {
+      padding-top: auto;
+    }
+
+    button{
+      @media (max-width:480px) {
+        width: 100%;
+      }
+    }
+
+    
   }
+
   &__links {
     display: flex;
     max-width: 392px;
@@ -52,18 +98,61 @@
     @media (max-width:1256px) {
       flex:1 0 50%;
     }
+
+    @media (max-width:850px) {
+      display: none;
+      margin-left: 0px;
+    }
+  }
+
+  &__photo-adaptiv{
+    display: none;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    // height: 600px;
+
+    & img{
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width:850px) {
+      display: block;
+    }
   }
 }
 .history {
   padding: 100px 0px;
-  // background-color: $textColor;
-  // color: white;
+  background-color: $textColor;
+  
+  p{
+    color: white;
+  }
+
+}
+
+.projects{
+  padding-top: 100px;
 }
 
 .cooperation {
   &__card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
+  
+  @media (max-width:1256px) {
+    margin: 0 -28px;
+  }  
+
+  @media (max-width:1000px) {
+    margin: 0 -28px;
+  }
+
+  @media (max-width:576px) {
+      margin: 0 -24px;
+  }
+
+  @media (max-width:480px) {
+    margin: 0 -18px;
+  }
   }
 }

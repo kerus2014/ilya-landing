@@ -12,14 +12,18 @@ const CooperationCard = (props: IProps) => {
   } = props;
   return (
     <div className={styles["card"]}>
-      <div className={styles["card__image"]}>
-        <img src={image} alt={image} />
+
+      <div className={styles["card__first-column"]}>
+        <div className={styles["card__image"]}>
+          <img src={image} alt={image} />
+        </div>
+        <h3 className={styles["card__title"]}>{title}</h3>
       </div>
 
-      <h3 className={styles["card__title"]}>{title}</h3>
-      <h4 className={styles["card__subtitle"]}>{subtitle}</h4>
-
-      <LinkWithArrow value={"Подробнее"} />
+      <div className={styles["card__second-column"]}>
+        <h4 className={styles["card__subtitle"]}>{subtitle}</h4>
+        <LinkWithArrow value={"Подробнее"} />
+      </div>
     </div>
   );
 };

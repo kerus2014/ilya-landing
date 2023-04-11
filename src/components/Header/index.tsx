@@ -8,6 +8,10 @@ import { CHANGE_MENU_STATE, changeMenuStateAction } from "../../reduxTools/burge
 import { useSelector } from "react-redux";
 import { AppState } from "../../reduxTools/store";
 import cn from "classnames";
+import { VK } from "../../assets/icons/socials/VK";
+import { INST } from "../../assets/icons/socials/INST";
+import { TG } from "../../assets/icons/socials/TG";
+import { FB } from "../../assets/icons/socials/FB";
 
 
 export const Header = () => {
@@ -32,7 +36,18 @@ export const Header = () => {
             </div>
           </div>
           <div className={cn(styles["hamburger-menu"], {[styles["hamburger-menu__active"]]: isBurgerOpen === true, })}>
-            <Navbar className={styles["hamburger-menu__list"]}/>
+            <div className={styles["hamburger-menu__container"]}>
+              <Navbar className={styles["hamburger-menu__list"]}/>
+              <hr className={styles["hamburger-menu__line"]}/>
+              <p>davydov@gmail.com</p>
+              <p>+375(33)5556677</p>
+              <div className={styles["hamburger-menu__socials"]}>
+                <VK/>
+                <INST/>
+                <TG/>
+                <FB/>
+              </div>
+            </div>
           </div>
         </div>
       </Container>

@@ -1,0 +1,9 @@
+.container{
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}

@@ -1,8 +1,21 @@
 @import "../../styles/variables.scss";
+
+
 .card {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 285px;
+
+  &__image-container{
+    width: 285px;
+    height: 219px;
+
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
   &__type {
     color: $primaryColor;

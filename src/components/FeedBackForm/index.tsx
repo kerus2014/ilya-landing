@@ -3,10 +3,12 @@ import styles from "./index.module.scss";
 const FeedBackForm = () => {
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>
-        Давайте знакомится, встречаться и работать <b className={styles.title}>вместе</b>!
-      </h3>
-      <h4>Оставьте заявку, я Вам перезвоню для обсуждения сотрудничества:</h4>
+      <div>
+        <h3 className={styles.title}>
+          Давайте знакомится, встречаться и работать <b className={styles.title}>вместе</b>!
+        </h3>
+        <h4>Оставьте заявку, я Вам перезвоню для обсуждения сотрудничества:</h4>
+      </div>
       <form className={styles.formContainer} id="form" action="">
         <div className={styles.inputs}>
           <input

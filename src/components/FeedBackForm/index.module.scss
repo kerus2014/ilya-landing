@@ -6,6 +6,28 @@ $padding: 10px;
   flex-direction: column;
   height: 100%;
 
+  @media (max-width:1000px) {
+    display: block;
+    height: 100%;
+  }
+
+  &>div{
+    @media (max-width:1000px) {
+      position: absolute;
+      top:50px;
+      left:0px;
+      padding: 0px 28px;
+    }
+  
+    @media (max-width:576px) {
+      padding:0px 24px;
+    }
+  
+    @media (max-width:480px) {
+      padding:0px 18px;
+    }
+  }
+
   h4{
     margin-top: 10px;
   }
@@ -14,21 +36,65 @@ $padding: 10px;
 .title{
   font-size: 22px;
   line-height: 31px;
+
+  @media (max-width:636px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .inputs {
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1.3fr;
+  grid-row: 1fr 1fr;
   grid-column-gap: 20px;
+
+  @media (max-width:1000px) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+    grid-row-gap:10px ;
+  }
+
+  @media (max-width:730px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width:690px) {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  @media (max-width:480px) {
+    grid-template-columns: repeat(1,1fr);
+  }
 
   &+input{
     margin-top: 10px;
+  }
+
+  .input:nth-child(3) {
+
+    @media (max-width:1000px) {
+      grid-column: 1 / 3;
+    }
+
+    @media (max-width:730px) {
+      grid-column: 1;
+    }
+
+    @media (max-width:690px) {
+      grid-column: 1 / 3;
+    }
+
+    @media (max-width:480px) {
+      grid-column: 1;
+    }
   }
 }
 
@@ -39,6 +105,16 @@ $padding: 10px;
   border-bottom: 1px solid $textColor;
   padding-left: $padding;
   height: 48px;
+
+  &__row-span{
+
+    @media (max-width:1000px) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+  }
 }
 
 .textarea {
@@ -46,8 +122,9 @@ $padding: 10px;
   border: 1px solid $textColor;
   outline: 0;
   resize: none;
-  height: 98px;
+  // height: 100%;
   padding: 10px;
+  flex-grow: 1;
 }
 
 .submit {

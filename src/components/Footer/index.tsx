@@ -4,6 +4,10 @@ import { Link } from "../Link";
 import Navbar from "../Navbar";
 import styles from "./index.module.scss";
 import { DesignerLogo } from "../../assets/icons/DesignerLogo";
+import { TG } from "../../assets/icons/socials/TG";
+import { FB } from "../../assets/icons/socials/FB";
+import { INST } from "../../assets/icons/socials/INST";
+import { VK } from "../../assets/icons/socials/VK";
 export const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -41,10 +45,14 @@ export const Footer = () => {
                 Будем на связи в социальных сетях:
               </h3>
               <div className={styles.linksContainer}>
-                <Link value={"Facebook"} />
+                <TG/>
+                <FB/>
+                <INST/>
+                <VK/>
+                {/* <Link value={"Facebook"} />
                 <Link value={"Instagram"} />
                 <Link value={"Telegram"} />
-                <Link value={"VK"} />
+                <Link value={"VK"} /> */}
               </div>
             </div>
             <p className={styles["footer__designer"]}>

@@ -11,7 +11,7 @@ const index = (props: IProps) => {
   } = props;
   return (
     <div className={styles.card}>
-      <div className={styles["card_image-container"]}>
+      <div className={styles["card__image-container"]}>
         <img src={image} alt={image} />
       </div>
       <p>{text}</p>

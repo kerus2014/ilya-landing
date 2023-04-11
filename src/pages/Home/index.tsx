@@ -13,6 +13,7 @@ import CooperationCard from "../../components/CooperationCard";
 import { blogCardData } from "../../services/blogCardData";
 import BlogCard from "../../components/BlogCard";
 import styles from "./index.module.scss";
+import { SimpleSlider } from "../../components/SimpleSlider";
 
 export const Home = () => {
   return (
@@ -24,6 +25,9 @@ export const Home = () => {
             <h2 className={styles["banner__subtitle"]}>
               Туризм. Технологии. Будущее.
             </h2>
+            <div className={styles["banner__photo-adaptiv"]}>
+              <img src={photo} alt="photo1" />
+            </div>
             <p className={styles["banner__devis"]}>
               Объединяю личный опыт и опыт специалистов из разных сфер для
               развития туризма
@@ -57,7 +61,7 @@ export const Home = () => {
           />
         ))}
       </BlockTemplate>
-      <BlockTemplate className={styles.history}>
+      <BlockTemplate className={styles.projects}>
         <TitleWithBottomLine title="Проекты" />
 
         {projectCardsData.map((elem, index) => (
@@ -81,9 +85,11 @@ export const Home = () => {
         />
 
         <div className={styles["cooperation__card-container"]}>
-          {blogCardData.map((elem, index) => (
-            <BlogCard key={index} card={elem} />
-          ))}
+          <SimpleSlider>
+            {blogCardData.map((elem, index) => (
+              <BlogCard key={index} card={elem} />
+            ))}
+          </SimpleSlider>
         </div>
       </BlockTemplate>
     </>

@@ -3,10 +3,13 @@ import { ClassName, INavbarData, NavLinkValue } from "../../types";
 import { useNavigate } from "react-router-dom";
 import NavLink from "../NavLink";
 import styles from "./index.module.scss";
+import { useDispatch } from "react-redux";
+import { closeMenuStateAction } from "../../reduxTools/burgerMenu/actions";
 
 const Navbar = (props:ClassName) => {
   const [activeLink, setActiveLink] = useState<NavLinkValue>("Главная");
   const navigate = useNavigate();
+  const dispatch = useDispatch()
 
   const navbarData: INavbarData[] = [
     {
@@ -15,6 +18,7 @@ const Navbar = (props:ClassName) => {
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
         navigate("");
+        dispatch(closeMenuStateAction())
       },
     },
     {
@@ -23,6 +27,7 @@ const Navbar = (props:ClassName) => {
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
         navigate("/about");
+        dispatch(closeMenuStateAction())
       },
     },
     {
@@ -31,6 +36,7 @@ const Navbar = (props:ClassName) => {
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
         navigate("/projects");
+        dispatch(closeMenuStateAction())
       },
     },
     {
@@ -39,6 +45,7 @@ const Navbar = (props:ClassName) => {
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
         navigate("");
+        dispatch(closeMenuStateAction())
       },
     },
     {
@@ -47,6 +54,7 @@ const Navbar = (props:ClassName) => {
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
         navigate("");
+        dispatch(closeMenuStateAction())
       },
     },
     {
@@ -55,6 +63,7 @@ const Navbar = (props:ClassName) => {
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
         navigate("/services");
+        dispatch(closeMenuStateAction())
       },
     },
     {
@@ -63,6 +72,7 @@ const Navbar = (props:ClassName) => {
       handler: (value: NavLinkValue) => {
         setActiveLink(value);
         navigate("/contacts");
+        dispatch(closeMenuStateAction())
       },
     },
   ];
