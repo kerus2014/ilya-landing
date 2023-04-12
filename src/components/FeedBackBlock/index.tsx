@@ -6,7 +6,7 @@ import { BlockTemplate } from "../BlockTemplate";
 
 const FeedBackBlock = () => {
   return (
-    <BlockTemplate className={styles["feedback-block"]}>
+    <BlockTemplate className={styles["feedback-block"]} id="contacts">
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <img src={logo} alt="feedBackLogo" />

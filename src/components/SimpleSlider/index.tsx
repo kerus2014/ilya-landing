@@ -11,10 +11,10 @@ interface IProps{
 export const SimpleSlider = (props:IProps) => {
     const settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 1,
-      variableWidth: true,
+      variableWidth: true
     };
 
     return (

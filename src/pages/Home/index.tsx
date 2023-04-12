@@ -16,6 +16,13 @@ import styles from "./index.module.scss";
 import { SimpleSlider } from "../../components/SimpleSlider";
 
 export const Home = () => {
+  const handleClick = () => {
+    const element = document.getElementById("contacts")
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block:"nearest"});
+    }
+  }
+
   return (
     <>
       <BlockTemplate className={styles.banner}>
@@ -33,7 +40,7 @@ export const Home = () => {
               развития туризма
             </p>
             <div className={styles["banner__button-container"]}>
-              <Button value={"Связаться"} />
+              <Button value={"Связаться"} onClick={handleClick}/>
             </div>
           </div>
           <div className={styles["banner__right"]}>

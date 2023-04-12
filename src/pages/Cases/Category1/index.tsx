@@ -2,6 +2,7 @@ import React from "react";
 import { cases } from "../../../services/cases";
 import { CaseCard } from "../../../components/CaseCard";
 import styles from "./index.module.scss";
+
 const Category1 = () => {
   return (
     <div className={styles["etno__cases"]}>

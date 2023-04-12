@@ -137,22 +137,8 @@
 }
 
 .cooperation {
-  &__card-container {
+
+  &__card-container{
   
-  @media (max-width:1256px) {
-    margin: 0 -28px;
-  }  
-
-  @media (max-width:1000px) {
-    margin: 0 -28px;
-  }
-
-  @media (max-width:576px) {
-      margin: 0 -24px;
-  }
-
-  @media (max-width:480px) {
-    margin: 0 -18px;
-  }
   }
 }

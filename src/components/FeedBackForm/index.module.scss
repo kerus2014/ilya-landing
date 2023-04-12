@@ -105,6 +105,7 @@ $padding: 10px;
   border-bottom: 1px solid $textColor;
   padding-left: $padding;
   height: 48px;
+  border-radius: none;
 
   &__row-span{
 
@@ -122,7 +123,7 @@ $padding: 10px;
   border: 1px solid $textColor;
   outline: 0;
   resize: none;
-  // height: 100%;
+  border-radius: none;
   padding: 10px;
   flex-grow: 1;
 }
