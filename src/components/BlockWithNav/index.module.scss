@@ -1,7 +1,6 @@
 .block {
   display: flex;
   padding-top: 40px;
-  // flex-direction: column;
 
   &__nav-column {
     margin-top: -10px;
@@ -12,5 +11,13 @@
   }
   &__nav-title {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .block {
+    &__nav-column {
+      display: none;
+    }
   }
 }
