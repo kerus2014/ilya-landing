@@ -3,6 +3,7 @@ import { TitleWithBottomLine } from "../TitleWithBottomLine";
 import { NavLink, Outlet } from "react-router-dom";
 import { InnerNavData } from "../../types";
 import styles from "./index.module.scss";
+import Dropdown from "../Dropdown";
 
 interface IBlockWithNav {
   title: string;
@@ -16,6 +17,7 @@ export const BlockWithNav = (props: IBlockWithNav) => {
   return (
     <BlockTemplate>
       <TitleWithBottomLine title={title} subtitle={subtitle} />
+      <Dropdown dropdownData={navData} />
       <div className={styles.block}>
         <div className={styles["block__nav-column"]}>
           {navTitle && (

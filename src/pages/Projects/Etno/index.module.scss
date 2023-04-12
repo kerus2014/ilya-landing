@@ -51,3 +51,11 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .etno {
+    &__images-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
