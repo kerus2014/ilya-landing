@@ -5,14 +5,16 @@
   min-width: 190px;
   font-size: 20px;
   line-height: 30px;
-  outline: 1px solid $textColor;
-  background: none;
+  outline: none;
+  background-color: $primaryColor;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.4px;
   border: none;
   cursor: pointer;
 
   &:hover{
-    background-color: $primaryColor;
-    outline: none;
+    opacity: 0.8;
   }
 
   &:active{

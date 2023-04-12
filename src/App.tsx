@@ -11,7 +11,6 @@ import { Etno } from "./pages/Projects/Etno";
 import { AgroTourism } from "./pages/Projects/AgroTourismPro";
 import { PixelLab } from "./pages/Projects/PixelLab";
 import { TravelTech } from "./pages/Projects/TravelTech";
-
 import { Services } from "./pages/Services";
 import { Audit } from "./pages/Services/Audit";
 import { Consulting } from "./pages/Services/Consulting";
