@@ -8,7 +8,6 @@ interface IBlockWithNav {
   title: string;
   navData: InnerNavData[];
   navTitle?: string;
-
   subtitle?: string;
 }
 

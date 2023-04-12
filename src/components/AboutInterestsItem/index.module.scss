@@ -1,20 +1,29 @@
 @import "../../styles/variables.scss";
 
-.item{
+.item {
   width: 100%;
   padding: 20px 0px;
 
-  &__text{
+  &__text {
     margin: 0 auto;
     max-width: 265px;
     text-align: center;
   }
 
-  &__line{
+  &__line {
     width: 100%;
     margin-top: 10px;
     height: 1px;
     border: none;
-    background: linear-gradient(90deg, #DAEEFC 0%, #4FB5FF 50%, #DAEEFC 100%);
+    background: linear-gradient(90deg, #daeefc 0%, #4fb5ff 50%, #daeefc 100%);
+  }
+}
+
+@media (max-width: 470px) {
+  .item {
+    &__text {
+      margin: 0;
+      text-align: inherit;
+    }
   }
 }

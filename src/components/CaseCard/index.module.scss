@@ -1,24 +1,41 @@
 @import "../../styles/variables.scss";
 
-.case-card{
+.case-card {
   display: flex;
 
-  &__image{
+  &__image {
     flex: 0 0 40%;
     margin-right: 20px;
+    &_small {
+      display: none;
+    }
   }
 
-  &__title{
-    font-weight:22px;
-    line-height:31px;
+  &__title {
+    font-weight: 22px;
+    line-height: 31px;
   }
 
-  &__description{
+  &__description {
     padding: 10px 0px;
     font-weight: 300;
   }
 }
 
-.case-card+.case-card{
+.case-card + .case-card {
   margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+  .case-card {
+    &__image {
+      display: none;
+      &_small {
+        display: block;
+      }
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
 }
