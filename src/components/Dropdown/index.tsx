@@ -3,6 +3,8 @@ import { InnerNavData } from "../../types";
 import { useLocation, useNavigate } from "react-router";
 import styles from "./index.module.scss";
 import cn from "classnames";
+import { ArrowList } from "../../assets/icons/ArrowList";
+
 interface IProps {
   dropdownData: InnerNavData[];
 }
@@ -42,11 +44,12 @@ const Dropdown = (props: IProps) => {
         })}
       >
         {dropdownData.map(({ to, value }) => (
-          <div key={value} onClick={(e) => clickDropdownItem(e, to, value)}>
+          <div className={styles["dropdown__item"]} key={value} onClick={(e) => clickDropdownItem(e, to, value)}>
             {value}
           </div>
         ))}
       </div>
+      <div className={cn(styles["dropdown__arrow"], { [styles["dropdown__arrow-open"]]: open, })}><ArrowList/></div>
     </div>
   );
 };

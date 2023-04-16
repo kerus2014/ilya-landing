@@ -8,7 +8,7 @@
   gap: 20px;
 
   @media (max-width:1000px) {
-    padding-top: 105px;
+    padding-top: 95px;
   }
 
   @media (max-width:663px) {
@@ -17,6 +17,14 @@
 
   @media (max-width:585px) {
     padding-top: 155px;
+  }
+
+  @media (max-width:576px) {
+    padding-top: 204px;
+  }
+
+  @media (max-width:355px) {
+    padding-top: 228px;
   }
 
   @media (max-width:690px) {

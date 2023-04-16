@@ -16,11 +16,13 @@ export const Contacts = () => {
         <p>Пишите: <span>davydov@gmail.com</span></p>
         <p>Звоните: <span>+375 (33) 5556677</span></p>
         <p>
-          Будем на связи в социальных сетях: 
-          <Link value="Facebook" href=""/> 
-          <Link value="Instagram" href=""/> 
-          <Link value="Telegram" href="https://t.me/ilaidavy"/> 
-          <Link value="VK" href=""/>
+          Будем на связи в социальных сетях:
+          <div>
+            <Link value="Facebook" href=""/> 
+            <Link value="Instagram" href=""/> 
+            <Link value="Telegram" href="https://t.me/ilaidavy"/> 
+            <Link value="VK" href=""/>
+          </div>
         </p>
       </div>
       <p>

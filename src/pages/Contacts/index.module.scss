@@ -1,4 +1,7 @@
+@import "../../styles/variables.scss";
+
 .contacts{
+  padding-bottom: 0px;
 
   & p:nth-child(2){
     margin-top: 40px ;
@@ -10,9 +13,28 @@
 
   &__connect{
     padding: 20px 0px;
+    
+    a{
+      color: $primaryColor;
+
+      &:hover{
+        opacity: 0.5;
+      }
+    }
 
     & p:nth-child(2){
       margin-top: 10px ;
+    }
+
+    & p:nth-child(3) div{
+      display: inline;
+      margin-left: 10px;
+      margin-top: 10px;
+
+      @media (max-width:690px) {
+        display: block;
+        margin-left: 0px;
+      }
     }
 
     & p{
@@ -20,7 +42,7 @@
       font-weight: 400;
     }
 
-    & a{
+    & a+a{
       margin-left: 10px;
     }
   }
