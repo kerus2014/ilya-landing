@@ -17,7 +17,19 @@
     }
   }
 
-  &__type {
-    color: $primaryColor;
+  & p:nth-child(3){
+    opacity: 0.7;
   }
+
+  &__type {
+    color: $primaryColor!important;
+  }
+}
+
+:global(.dark) p{
+  color: white;
+}
+
+:global(.dark) a{
+  color: white;
 }

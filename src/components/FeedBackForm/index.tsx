@@ -42,7 +42,7 @@ const FeedBackForm = () => {
           placeholder="Кратко опишите ваш запрос"
         ></textarea>
         <Button value="Отправить" className={styles.submit}/>
-        <p className={styles.conditions}>Отправляя форму, Вы соглашаетесь с Политикой конфиденциальности.</p>
+        <p className={styles.conditions}>Отправляя форму, Вы соглашаетесь с <a href="">Политикой конфиденциальности.</a></p>
       </form>
     </div>
   );

@@ -56,7 +56,7 @@ export const Home = () => {
           </div>
         </div>
       </BlockTemplate>
-      <BlockTemplate className={styles.history}>
+      <BlockTemplate className="dark">
         <TitleWithBottomLine title="МОЯ ИСТОРИЯ" />
 
         {myHistoryData.map(({ number, title, description }, index) => (
@@ -85,13 +85,13 @@ export const Home = () => {
           <CooperationCard key={index} card={elem} />
         ))}
       </BlockTemplate>
-      <BlockTemplate className={styles.cooperation}>
+      <BlockTemplate className="dark">
         <Title
           title="Блог"
           subtitle="В блоге я пишу полезные статьи, делюсь личным опытом, кейсами и новостями из сферы туризма:"
         />
 
-        <div className={styles["cooperation__card-container"]}>
+        <div className={styles["blog__card-container"]}>
           <SimpleSlider>
             {blogCardData.map((elem, index) => (
               <BlogCard key={index} card={elem} />

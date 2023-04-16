@@ -23,7 +23,7 @@
   &__grid {
     display: grid;
     grid-column-gap: 20px;
-    grid-template-columns: 33% 67%;
+    grid-template-columns: calc(33% - 10px) calc(67% - 10px);
 
     @media (max-width:764px) {
       grid-template-columns: 1fr;
@@ -33,6 +33,7 @@
   &__grid-item {
     display: flex;
     align-items: center;
+    width: 100%;
 
     &_first {
       font-size: 22px;
@@ -48,6 +49,9 @@
 
     &_second {
       font-weight: 300;
+      display: flex;
+      align-items: center;
+      width: 100%;
     }
   }
 }

@@ -3,9 +3,10 @@
 .link-icon{
   display: flex;
   align-items: center;
+  cursor: pointer;
 
-  &:hover *{
-    fill:$primaryColor;
+  &:hover a{
+    color:$primaryColor!important;
   }
 
   &:hover .arrow{
