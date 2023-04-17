@@ -11,9 +11,11 @@
 
   &__logo {
     margin-right: 30px;
+    // flex: 0 0 70px;
 
     img {
       height: 62px;
+      object-fit: cover;
     }
   }
 
@@ -35,7 +37,9 @@
     overflow: hidden;
 
     & img {
+      height: 100%;
       object-fit: cover;
+      object-position: top;
     }
   }
 
@@ -54,8 +58,22 @@
 
 @media (max-width: 600px) {
   .etno {
+
     &__images-grid {
-      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+
+    &__image {
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .etno {
+
+    &__image {
+      height: 100px;
     }
   }
 }

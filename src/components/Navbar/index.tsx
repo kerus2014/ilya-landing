@@ -65,7 +65,7 @@ const Navbar = (props: ClassName) => {
       value: "Сотрудничество",
       handler: (value: NavLinkValueType) => {
         setActiveLink(value);
-        navigate("/services");
+        navigate("/services/audit");
         dispatch(closeMenuStateAction())
       },
     },

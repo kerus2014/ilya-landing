@@ -115,7 +115,8 @@
   height: 0px;
   left: 0px;
   background-color: white;
-  transition: 0.25s;
+  opacity: 0;
+  transition-duration: 0.25s;
   text-align: center;
 
   &__container{
@@ -132,6 +133,7 @@
 
   &__active{
     min-height: calc(100vh - 64px);
+    opacity: 1;
 
     & .hamburger-menu__container{
       top:0px;

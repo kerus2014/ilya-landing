@@ -6,6 +6,12 @@ $padding: 10px;
   flex-direction: column;
   height: 100%;
 
+  div h4{
+    @media (max-width:690px) {
+      display: none;
+    }
+  }
+
   @media (max-width:1000px) {
     display: block;
     height: 100%;
@@ -21,6 +27,7 @@ $padding: 10px;
   
     @media (max-width:576px) {
       padding:0px 24px;
+      top:64px;
     }
   
     @media (max-width:480px) {
@@ -36,6 +43,12 @@ $padding: 10px;
 .title{
   font-size: 22px;
   line-height: 31px;
+
+  span {
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 700;
+  }
 
   @media (max-width:636px) {
     font-size: 20px;

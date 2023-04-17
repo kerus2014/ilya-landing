@@ -44,7 +44,6 @@ function App() {
         <Route path="cooperation" element={<WorkWithUs />}>
           <Route path="farmsteadowners" element={<FarmsteadOwners />} />
         </Route>
-        <Route path="partners" element={<Services />} />
         <Route path="services" element={<Services />}>
           <Route path="audit" element={<Audit />} />
           <Route path="consulting" element={<Consulting />} />
@@ -52,6 +51,7 @@ function App() {
           <Route path="organization" element={<Organization />} />
           <Route path="project_support" element={<ProjectSupport />} />
         </Route>
+        <Route path="partners" element={<Services />} />
         <Route path="cases" element={<Cases />}>
           <Route path="category1" element={<Category1 />} />
           <Route path="category2" element={<AgroTourism />} />

@@ -11,25 +11,23 @@
     padding-top: 95px;
   }
 
-  @media (max-width:663px) {
-    padding-top: 130px;
+  @media (max-width:690px) {
+    flex-direction: column;
+    padding-top: 61px;
   }
 
-  @media (max-width:585px) {
-    padding-top: 155px;
+  @media (max-width:590px) {
+    padding-top: 89px;
   }
 
   @media (max-width:576px) {
-    padding-top: 204px;
+    padding-top: 89px;
   }
 
-  @media (max-width:355px) {
-    padding-top: 228px;
+  @media (max-width:366px) {
+    padding-top: 120px;
   }
 
-  @media (max-width:690px) {
-    flex-direction: column;
-  }
 }
 
 .imageContainer {
