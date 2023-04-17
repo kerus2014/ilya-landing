@@ -40,11 +40,12 @@ main {
   background-color: $textColor;
 }
 
-input[type="textarea"],
+input[type="tel"],
 input[type="text"],
 input[type="email"],
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+textarea {
      -webkit-appearance: none;
      border-radius: 0;
 }

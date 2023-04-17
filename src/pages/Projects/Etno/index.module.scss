@@ -12,9 +12,10 @@
   &__logo {
     margin-right: 30px;
     flex: 0 0 70px;
+    height: 72px;
 
     img {
-      height: 62px;
+      height: 100%;
       object-fit: cover;
     }
   }
