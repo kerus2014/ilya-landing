@@ -14,6 +14,7 @@ import { blogCardData } from "../../services/blogCardData";
 import BlogCard from "../../components/BlogCard";
 import styles from "./index.module.scss";
 import { SimpleSlider } from "../../components/SimpleSlider";
+import { LinkWithArrow } from "../../components/LinkWithArrow";
 
 export const Home = () => {
   const handleClick = () => {
@@ -56,7 +57,7 @@ export const Home = () => {
           </div>
         </div>
       </BlockTemplate>
-      <BlockTemplate className="dark">
+      <BlockTemplate className={`${styles.history} dark`}>
         <TitleWithBottomLine title="МОЯ ИСТОРИЯ" />
 
         {myHistoryData.map(({ number, title, description }, index) => (
@@ -67,6 +68,7 @@ export const Home = () => {
             value3={description}
           />
         ))}
+        <LinkWithArrow value="Подробнее"/>
       </BlockTemplate>
       <BlockTemplate className={styles.projects}>
         <TitleWithBottomLine title="Проекты" />
@@ -84,6 +86,9 @@ export const Home = () => {
         {myCooperationData.map((elem, index) => (
           <CooperationCard key={index} card={elem} />
         ))}
+        <p>
+        Не нашли себя в списке? Не беда. Если вас что-то заинтересовало, у вас есть предложение, или наши интересы совпадают и вы хотите поучаствовать в каком-нибудь проекте - смело обращайтесь.
+        </p>
       </BlockTemplate>
       <BlockTemplate className="dark">
         <Title
@@ -98,6 +103,7 @@ export const Home = () => {
             ))}
           </SimpleSlider>
         </div>
+        <LinkWithArrow value="Все статьи"/>
       </BlockTemplate>
     </>
   );
