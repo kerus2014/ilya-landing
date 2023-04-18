@@ -6,7 +6,6 @@ import { Blog } from "./pages/Blog";
 import { Cases } from "./pages/Cases";
 import { Contacts } from "./pages/Contacts";
 import { Projects } from "./pages/Projects";
-import { WorkWithUs } from "./pages/WorkWithUs";
 import { Etno } from "./pages/Projects/Etno";
 import { AgroTourism } from "./pages/Projects/AgroTourismPro";
 import { PixelLab } from "./pages/Projects/PixelLab";
@@ -29,6 +28,7 @@ import Category1 from "./pages/Cases/Category1";
 import Category2 from "./pages/Cases/Category2";
 import Category3 from "./pages/Cases/Category3";
 import Category4 from "./pages/Cases/Category4";
+import { Cooperation } from "./pages/Cooperation";
 
 function App() {
   return (
@@ -49,7 +49,7 @@ function App() {
           <Route path="pixel" element={<PixelLab />} />
           <Route path="travel" element={<TravelTech />} />
         </Route>
-        <Route path="cooperation" element={<WorkWithUs />}>
+        <Route path="cooperation" element={<Cooperation />}>
           <Route path="forOwners" element={<ForOwner />} />
           <Route path="touristComplex" element={<TouristComplex />} />
           <Route path="forDestination" element={<ForDestination />} />
