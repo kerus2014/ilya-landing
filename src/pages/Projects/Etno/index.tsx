@@ -4,8 +4,11 @@ import { LinkWithArrow } from "../../../components/LinkWithArrow";
 import { etnoImages } from "../../../services/etnoImagesData";
 import { cases } from "../../../services/cases";
 import { CaseCard } from "../../../components/CaseCard";
+import { useNavigate } from "react-router-dom";
 
 export const Etno = () => {
+  const navigate = useNavigate()
+
   return (
     <div className={styles.etno}>
       <div className={styles["etno__info"]}>
@@ -66,7 +69,7 @@ export const Etno = () => {
             );
           })}
       </div>
-      <LinkWithArrow value="Все кейсы" />
+      <LinkWithArrow value="Все кейсы" onClick={() => navigate("/cases/category1")}/>
     </div>
   );
 };

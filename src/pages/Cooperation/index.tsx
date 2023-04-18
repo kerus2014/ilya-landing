@@ -7,37 +7,33 @@ export const Cooperation = () => {
     {
       id: 1,
       value: "Хозяевам агроусадьб, глэмпингов, гостевых домов",
-      to:"/cooperation/forOwner"
-
+      to:"/cooperation/forOwners",
     },
     {
       id: 2,
       value: "Туристическим комплексам, санаториям, базам отдыха",
-      to:"/cooperation/touristComplex"
-
+      to:"/cooperation/touristComplex",
     },
     {
       id: 3,
       value: "Дестинациям, кластерам",
-      to:"/cooperation/forDestination"
-
+      to:"/cooperation/forDestination",
     },
     {
       id: 4,
       value: "Проектным организациям в сфере туризма",
-      to:"/cooperation/forProjectOrganization"
-
+      to:"/cooperation/forProjectOrganization",
     },
     {
       id: 5,
       value: "Национальным паркам, заказникам, заповедникам",
-      to:"/cooperation/forNationalPark"
+      to:"/cooperation/forNationalPark",
     },
     {
       id: 6,
       value: "Гос. структурам, центрам поддержки предпринимательства",
-      to:"/cooperation/forStateStructures"
-    },
+      to:"/cooperation/forStateStructures",
+    }
   ];
 
   return (

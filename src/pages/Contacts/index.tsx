@@ -18,10 +18,10 @@ export const Contacts = () => {
         <p>
           Будем на связи в социальных сетях:
           <div>
-            <Link value="Facebook" href=""/> 
-            <Link value="Instagram" href=""/> 
+            <Link value="Facebook" href="https://www.facebook.com/ilja.davydov/"/> 
+            <Link value="Instagram" href="https://www.instagram.com/ilyadavydov/"/> 
             <Link value="Telegram" href="https://t.me/ilaidavy"/> 
-            <Link value="VK" href=""/>
+            <Link value="VK" href="https://vk.com/ildavydov"/>
           </div>
         </p>
       </div>

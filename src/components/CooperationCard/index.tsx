@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { ICooperationCard } from "../../types";
 import { LinkWithArrow } from "../LinkWithArrow";
 import styles from "./index.module.scss";
@@ -7,6 +8,7 @@ interface IProps {
 }
 
 const CooperationCard = (props: IProps) => {
+  const navigate = useNavigate()
   const {
     card: { image, title, subtitle, linkPath },
   } = props;
@@ -22,7 +24,7 @@ const CooperationCard = (props: IProps) => {
 
       <div className={styles["card__second-column"]}>
         <h4 className={styles["card__subtitle"]}>{subtitle}</h4>
-        <LinkWithArrow value={"Подробнее"} />
+        <LinkWithArrow value={"Подробнее"} onClick={() => navigate(linkPath)}/>
       </div>
     </div>
   );

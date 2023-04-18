@@ -42,10 +42,10 @@ export const Header = () => {
               <p>davydov@gmail.com</p>
               <p>+375(33)5556677</p>
               <div className={styles["hamburger-menu__socials"]}>
-                <VK/>
-                <INST/>
-                <TG/>
-                <FB/>
+                <VK href="https://vk.com/ildavydov"/>
+                <INST href="https://www.instagram.com/ilyadavydov/"/>
+                <TG href="https://t.me/ilaidavy"/>
+                <FB href="https://www.facebook.com/ilja.davydov/"/>
               </div>
             </div>
           </div>

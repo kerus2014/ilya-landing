@@ -16,14 +16,12 @@ const SelectedEvent = () => {
   }, [params.id]);
 
   return (
-    <div>
+    <div className={styles["selected-event"]}>
       <h3 className={styles["selected-event__title"]}>{event?.text}</h3>
       <p className={styles["selected-event__date"]}>{event?.date}</p>
-      <img
-        className={styles["selected-event__image"]}
-        src={event?.image}
-        alt=""
-      />
+      <div className={styles["selected-event__image"]}>
+        <img src={event?.image} alt="" />
+      </div>
     </div>
   );
 };

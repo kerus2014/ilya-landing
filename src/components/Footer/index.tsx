@@ -45,10 +45,10 @@ export const Footer = () => {
                 Будем на связи в социальных сетях:
               </h3>
               <div className={styles.linksContainer}>
-                <TG/>
-                <FB/>
-                <INST/>
-                <VK/>
+                <VK href="https://vk.com/ildavydov"/>
+                <INST href="https://www.instagram.com/ilyadavydov/"/>
+                <TG href="https://t.me/ilaidavy"/>
+                <FB href="https://www.facebook.com/ilja.davydov/"/>
                 {/* <Link value={"Facebook"} />
                 <Link value={"Instagram"} />
                 <Link value={"Telegram"} />

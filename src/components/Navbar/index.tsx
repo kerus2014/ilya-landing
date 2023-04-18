@@ -1,100 +1,64 @@
-import { useState } from "react";
-import { ClassName, INavbarData, NavLinkValueType } from "../../types";
-import { useNavigate } from "react-router-dom";
-import NavLink from "../NavLink";
-import styles from "./index.module.scss";
 import { useDispatch } from "react-redux";
 import { closeMenuStateAction } from "../../reduxTools/burgerMenu/actions";
+import { ClassName, INavbarData} from "../../types";
+import styles from "./index.module.scss";
+import { NavLink } from "react-router-dom";
 
 const Navbar = (props: ClassName) => {
-  const [activeLink, setActiveLink] = useState<NavLinkValueType>("Главная");
-
-  const navigate = useNavigate();
   const dispatch = useDispatch()
 
   const navbarData: INavbarData[] = [
     {
       id: 1,
       value: "Главная",
-      handler: (value: NavLinkValueType) => {
-        setActiveLink(value);
-        navigate("");
-        dispatch(closeMenuStateAction())
-      },
+      path: "/",
     },
     {
       id: 2,
       value: "Моя история",
-      handler: (value: NavLinkValueType) => {
-        setActiveLink(value);
-        navigate("/about");
-        dispatch(closeMenuStateAction())
-      },
+      path: "/about",
     },
     {
       id: 3,
       value: "Проекты",
-      handler: (value: NavLinkValueType) => {
-        setActiveLink(value);
-        dispatch(closeMenuStateAction())
-        navigate("/projects/etno");
-      },
+      path:"/projects/etno",
     },
     {
       id: 4,
       value: "Кейсы",
-      handler: (value: NavLinkValueType) => {
-        setActiveLink(value);
-        dispatch(closeMenuStateAction())
-        navigate("/cases/category1");
-      },
+      path: "/cases/category1"
     },
     {
       id: 5,
       value: "Блог",
-      handler: (value: NavLinkValueType) => {
-        setActiveLink(value);
-        dispatch(closeMenuStateAction())
-        navigate("/blog/events");
-      },
+      path: "/blog/events"
     },
     {
       id: 6,
       value: "Сотрудничество",
-      handler: (value: NavLinkValueType) => {
-        setActiveLink(value);
-        navigate("/cooperation/forOwner");
-        dispatch(closeMenuStateAction())
-      },
+      path: "/cooperation/forOwners",
     },
     {
       id: 7,
       value: "Контакты",
-      handler: (value: NavLinkValueType) => {
-        setActiveLink(value);
-        navigate("/contacts");
-        dispatch(closeMenuStateAction())
-      },
+      path: "/contacts",
     },
   ];
 
   return (
-    <ul
+    <nav
       className={
         props.className
           ? `${styles.container} ${props.className}`
           : styles.container
       }
     >
-      {navbarData.map(({ id, value, handler }) => (
-        <NavLink
-          key={id}
-          value={value}
-          handler={handler}
-          activeLink={activeLink}
-        />
+      {navbarData.map(({ id, value, path }) => (
+        <NavLink key={id.toString()} to={path} className={({ isActive }: { isActive: boolean }): string => (isActive ? 'navLink activeNavLink' : 'navLink')} onClick={() => dispatch(closeMenuStateAction())} >
+          {value}
+        </NavLink>
       ))}
-    </ul>
+    </nav>
   );
 };
 

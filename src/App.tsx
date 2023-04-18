@@ -19,13 +19,13 @@ import { Organization } from "./pages/Services/Organization";
 import { ProjectSupport } from "./pages/Services/ProjectSupport";
 import Events from "./pages/Blog/Events";
 import SelectedEvent from "./pages/Blog/Events/SelectedEvent";
-import Category1 from "./pages/Cases/Category1";
 import { ForOwner } from "./pages/Cooperation/FowOwner";
 import { TouristComplex } from "./pages/Cooperation/TouristComplex";
 import { ForDestination } from "./pages/Cooperation/ForDestination";
 import { ForProjectOrganization } from "./pages/Cooperation/ForProjectOrganization";
 import { ForNationalPark } from "./pages/Cooperation/ForNationalPark";
 import { ForStateStructures } from "./pages/Cooperation/ForStateStructures";
+import Category1 from "./pages/Cases/Category1";
 import Category2 from "./pages/Cases/Category2";
 import Category3 from "./pages/Cases/Category3";
 import Category4 from "./pages/Cases/Category4";
@@ -50,7 +50,7 @@ function App() {
           <Route path="travel" element={<TravelTech />} />
         </Route>
         <Route path="cooperation" element={<WorkWithUs />}>
-          <Route path="forOwner" element={<ForOwner />} />
+          <Route path="forOwners" element={<ForOwner />} />
           <Route path="touristComplex" element={<TouristComplex />} />
           <Route path="forDestination" element={<ForDestination />} />
           <Route path="forProjectOrganization" element={<ForProjectOrganization />} />
@@ -64,7 +64,6 @@ function App() {
           <Route path="organization" element={<Organization />} />
           <Route path="project_support" element={<ProjectSupport />} />
         </Route>
-        <Route path="partners" element={<Services />} />
         <Route path="cases" element={<Cases />}>
           <Route path="category1" element={<Category1 />} />
           <Route path="category2" element={<Category2/>} />

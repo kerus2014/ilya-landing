@@ -14,7 +14,7 @@ export type NavLinkValueType =
 export interface INavbarData {
   id: number;
   value: NavLinkValueType;
-  handler: (value: NavLinkValueType) => void;
+  path:string;
 }
 
 interface ICard {

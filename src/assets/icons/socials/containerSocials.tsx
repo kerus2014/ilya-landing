@@ -2,12 +2,13 @@ import styles from "./index.module.scss";
 
 interface IProps{
   children:React.ReactNode;
+  href?:string;
 }
 
 export const ContainerSocials = (props:IProps) => {
   return(
-    <div className={styles.container}>
+    <a className={styles.container} href={props.href}>
       {props.children}
-    </div>
+    </a>
   )
 }

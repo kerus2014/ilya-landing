@@ -15,8 +15,11 @@ import BlogCard from "../../components/BlogCard";
 import styles from "./index.module.scss";
 import { SimpleSlider } from "../../components/SimpleSlider";
 import { LinkWithArrow } from "../../components/LinkWithArrow";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate = useNavigate()
+
   const handleClick = () => {
     const element = document.getElementById("contacts")
     if (element) {
@@ -49,10 +52,10 @@ export const Home = () => {
               <img src={photo} alt="photo1" />
             </div>
             <div className={styles["banner__links"]}>
-              <Link value={"Facebook"} />
-              <Link value={"Instagram"} />
-              <Link value={"Telegram"} />
-              <Link value={"VK"} />
+              <Link value="Facebook" href="https://www.facebook.com/ilja.davydov/"/> 
+              <Link value="Instagram" href="https://www.instagram.com/ilyadavydov/"/> 
+              <Link value="Telegram" href="https://t.me/ilaidavy"/> 
+              <Link value="VK" href="https://vk.com/ildavydov"/>
             </div>
           </div>
         </div>
@@ -68,7 +71,7 @@ export const Home = () => {
             value3={description}
           />
         ))}
-        <LinkWithArrow value="Подробнее"/>
+        <LinkWithArrow value="Подробнее" onClick={() => navigate("/about")}/>
       </BlockTemplate>
       <BlockTemplate className={styles.projects}>
         <TitleWithBottomLine title="Проекты" />
@@ -103,7 +106,7 @@ export const Home = () => {
             ))}
           </SimpleSlider>
         </div>
-        <LinkWithArrow value="Все статьи"/>
+        <LinkWithArrow value="Все статьи" onClick={() => navigate("/blog/events")}/>
       </BlockTemplate>
     </>
   );

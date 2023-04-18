@@ -1,9 +1,11 @@
 import { LinkWithArrow } from "../../../components/LinkWithArrow";
 import forOwners from "../../../assets/pics/cooperatrion/forOwners/forOwners.png";
 import styles from "./index.module.scss";
+import { useNavigate } from "react-router-dom";
 
 export const ForOwner = () => {
-  
+  const navigate = useNavigate()
+
   return (
     <div className={styles["for-owner"]}>
       <p>
@@ -17,15 +19,15 @@ export const ForOwner = () => {
       </p>
       <div className={styles["for-owner__link"]}>
         <hr className={styles["for-owner__link-line"]}/>
-        <LinkWithArrow value="Аудит"/>
+        <LinkWithArrow value="Аудит" onClick={() => navigate("/services/audit")}/>
       </div>
       <div className={styles["for-owner__link"]}>
         <hr className={styles["for-owner__link-line"]}/>
-        <LinkWithArrow value="Консультация"/>
+        <LinkWithArrow value="Консультация" onClick={() => navigate("/services/consulting")}/>
       </div>
       <div className={styles["for-owner__link"]}>
         <hr className={styles["for-owner__link-line"]}/>
-        <LinkWithArrow value="Стратегия под ключ"/>
+        <LinkWithArrow value="Стратегия под ключ" onClick={() => navigate("/services/strategy")}/>
       </div>
     </div>
   );

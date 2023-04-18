@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { IProjectCard } from "../../types";
 import { LinkWithArrow } from "../LinkWithArrow";
 import styles from "./index.module.scss";
@@ -5,6 +6,7 @@ interface IProps {
   card: IProjectCard;
 }
 const ProjectCard = (props: IProps) => {
+  const navigate = useNavigate()
   const {
     card: {
       image,
@@ -27,8 +29,8 @@ const ProjectCard = (props: IProps) => {
             <img src={image} alt={image} />
           </div>
           <div className={styles["project-card__link-container"]}>
-            <LinkWithArrow value={firstLinkValue} />
-            <LinkWithArrow value={"Подробнее"} />
+            <LinkWithArrow value={firstLinkValue} href={firstLinkPath} />
+            <LinkWithArrow value={"Подробнее"} onClick={() => navigate(secondLinkPath)}/>
           </div>
         </div>
       </div>
