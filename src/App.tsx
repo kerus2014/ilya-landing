@@ -20,7 +20,15 @@ import { ProjectSupport } from "./pages/Services/ProjectSupport";
 import Events from "./pages/Blog/Events";
 import SelectedEvent from "./pages/Blog/Events/SelectedEvent";
 import Category1 from "./pages/Cases/Category1";
-import FarmsteadOwners from "./pages/WorkWithUs/FarmsteadOwners";
+import { ForOwner } from "./pages/Cooperation/FowOwner";
+import { TouristComplex } from "./pages/Cooperation/TouristComplex";
+import { ForDestination } from "./pages/Cooperation/ForDestination";
+import { ForProjectOrganization } from "./pages/Cooperation/ForProjectOrganization";
+import { ForNationalPark } from "./pages/Cooperation/ForNationalPark";
+import { ForStateStructures } from "./pages/Cooperation/ForStateStructures";
+import Category2 from "./pages/Cases/Category2";
+import Category3 from "./pages/Cases/Category3";
+import Category4 from "./pages/Cases/Category4";
 
 function App() {
   return (
@@ -42,7 +50,12 @@ function App() {
           <Route path="travel" element={<TravelTech />} />
         </Route>
         <Route path="cooperation" element={<WorkWithUs />}>
-          <Route path="farmsteadowners" element={<FarmsteadOwners />} />
+          <Route path="forOwner" element={<ForOwner />} />
+          <Route path="touristComplex" element={<TouristComplex />} />
+          <Route path="forDestination" element={<ForDestination />} />
+          <Route path="forProjectOrganization" element={<ForProjectOrganization />} />
+          <Route path="forNationalPark" element={<ForNationalPark />} />
+          <Route path="forStateStructures" element={<ForStateStructures />} />
         </Route>
         <Route path="services" element={<Services />}>
           <Route path="audit" element={<Audit />} />
@@ -54,9 +67,9 @@ function App() {
         <Route path="partners" element={<Services />} />
         <Route path="cases" element={<Cases />}>
           <Route path="category1" element={<Category1 />} />
-          <Route path="category2" element={<AgroTourism />} />
-          <Route path="category3" element={<PixelLab />} />
-          <Route path="category4" element={<TravelTech />} />
+          <Route path="category2" element={<Category2/>} />
+          <Route path="category3" element={<Category3 />} />
+          <Route path="category4" element={<Category4 />} />
         </Route>
         <Route path="contacts" element={<Contacts />} />
       </Route>

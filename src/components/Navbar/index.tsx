@@ -1,7 +1,5 @@
 import { useState } from "react";
-
 import { ClassName, INavbarData, NavLinkValueType } from "../../types";
-
 import { useNavigate } from "react-router-dom";
 import NavLink from "../NavLink";
 import styles from "./index.module.scss";
@@ -65,7 +63,7 @@ const Navbar = (props: ClassName) => {
       value: "Сотрудничество",
       handler: (value: NavLinkValueType) => {
         setActiveLink(value);
-        navigate("/services/audit");
+        navigate("/cooperation/forOwner");
         dispatch(closeMenuStateAction())
       },
     },

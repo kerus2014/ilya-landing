@@ -1,0 +1,50 @@
+@import "../../../styles/variables.scss";
+
+.for-owner{
+
+  &__image{
+    width: 100%;
+    height: 400px;
+    padding: 20px 0px;
+
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+
+  &__link-line{
+    margin-right: 10px;
+    height: 1px;
+    width: 15px;
+    background-color: $primaryColor;
+    border: none;
+  }
+
+  p:first-child{
+    margin-top: -10px;
+  }
+  
+  p:nth-child(3){
+    margin-bottom: 15px;
+  }
+
+  p{
+    font-weight: 300;
+  }
+}
+
+.for-owner__link+.for-owner__link{
+  margin-top: 10px;
+}
+
+
+
+
