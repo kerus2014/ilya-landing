@@ -10,7 +10,7 @@ export const projectCardsData = [
     subtitle: "Производство и реализация",
     text: "Etno.by - это семейная мануфактура. Мы производим сувениры, подарки, кормушки для птиц, настенные часы, подставки и другие интересные мелочи для интерьера, которые ты можешь найти на нашем сайте Etno.by или в магазинах-партнерах. Делаем собственные, авторские серии и изготавливаем под заказ по макетам и образцам заказчиков.",
     firstLinkValue: "Перейти на сайт",
-    firstLinkPath: "/https://etno.by/",
+    firstLinkPath: "https://etno.by/",
     secondLinkPath: "/projects/etno",
   },
   {
@@ -19,8 +19,8 @@ export const projectCardsData = [
     subtitle: "Разработка и внедрение",
     text: "Сервис по поиску отдыха и развлечений в Беларуси. Сервис представляет собой бот в Телеграм, который доступен для туристов, а также для владельцев агроусадеб.",
     firstLinkValue: "Перейти на сайт",
-    firstLinkPath: "/https://etno.by/",
-    secondLinkPath: "/projects/agro",
+    firstLinkPath: "https://etno.by/",
+    secondLinkPath: "/projects/travel",
   },
   {
     image: logo3,
@@ -28,7 +28,7 @@ export const projectCardsData = [
     subtitle: "Креатив, режиссура, постановка",
     text: "Туристические продукты. Креатив. Режиссура. Постановка.",
     firstLinkValue: "Перейти в бот",
-    firstLinkPath: "/https://etno.by/",
+    firstLinkPath: "https://etno.by/",
     secondLinkPath: "/projects/pixel",
   },
   {
@@ -37,7 +37,7 @@ export const projectCardsData = [
     subtitle: "Проект в разработке",
     text: "Помогаем развивать сельский туризм и малые территории. Помогаем создавать кластеры и развивать локальные территории.",
     firstLinkValue: "Перейти на сайт",
-    firstLinkPath: "/https://etno.by/",
-    secondLinkPath: "/projects/travel",
+    firstLinkPath: "https://etno.by/",
+    secondLinkPath: "/projects/agro",
   },
 ];
