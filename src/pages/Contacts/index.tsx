@@ -13,8 +13,8 @@ export const Contacts = () => {
         Если у Вас есть вопросы, идеи, предложения по сотрудничеству - я всегда буду рад быть на связи и помочь!
       </p>
       <div className={styles["contacts__connect"]}>
-        <p>Пишите: <span>davydov@gmail.com</span></p>
-        <p>Звоните: <span>+375 (33) 5556677</span></p>
+        <p>Пишите: <span>opennewtime@gmail.com</span></p>
+        <p>Звоните: <span>+375 (29) 751 61 78</span></p>
         <p>
           Будем на связи в социальных сетях:
           <div>
