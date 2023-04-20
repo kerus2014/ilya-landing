@@ -42,6 +42,10 @@ function App() {
           <Route path="tourism" element={<SelectedEvent />} />
           <Route path="business" element={<SelectedEvent />} />
           <Route path="myexperience" element={<SelectedEvent />} />
+          <Route path="hash_history" element={<SelectedEvent />} />
+          <Route path="hash_gastrotourism" element={<SelectedEvent />} />
+          <Route path="hash_business" element={<SelectedEvent />} />
+          <Route path="hash_myexperience" element={<SelectedEvent />} />
         </Route>
         <Route path="projects" element={<Projects />}>
           <Route path="etno" element={<Etno />} />

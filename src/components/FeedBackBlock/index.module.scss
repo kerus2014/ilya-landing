@@ -1,6 +1,10 @@
 .feedback-block{
   padding-bottom: 100px!important;
   position: relative;
+
+  @media (max-width:1000px) {
+    padding-bottom: 60px!important;
+  }
 }
 
 .container {
@@ -32,6 +36,7 @@
 
 .imageContainer {
   flex-basis: 33%;
+  flex-shrink: 0;
 
   @media (max-width:1000px) {
     flex-basis: 50%;
@@ -44,6 +49,7 @@
 }
 
 .formContainer {
+  width: 100%;
 
   @media (max-width:1000px) {
     flex-basis: 50%;

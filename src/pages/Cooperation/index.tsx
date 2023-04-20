@@ -1,5 +1,6 @@
 import { InnerNavData } from "../../types";
 import { BlockWithNav } from "../../components/BlockWithNav";
+import styles from "./index.module.scss";
 
 export const Cooperation = () => {
 

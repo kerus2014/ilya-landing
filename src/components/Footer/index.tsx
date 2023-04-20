@@ -34,11 +34,11 @@ export const Footer = () => {
               <div className={styles.contactBlockContainer}>
                 <div className={styles.contactBlock}>
                   <h4 className={styles.subtitle}>Пишите:</h4>
-                  <p>email@gmail.com</p>
+                  <p>opennewtime@gmail.com</p>
                 </div>
                 <div className={styles.contactBlock}>
                   <h4 className={styles.subtitle}>Звоните:</h4>
-                  <p>+37529555425</p>
+                  <p>+375 (29) 751 61 78 </p>
                 </div>
               </div>
               <h3 className={styles.subtitle}>
@@ -55,11 +55,14 @@ export const Footer = () => {
                 <Link value={"VK"} /> */}
               </div>
             </div>
-            <p className={styles["footer__designer"]}>
-              Дизайн сайта разработан
-              <DesignerLogo className={styles["footer__designer-logo"]} />
-            </p>
           </div>
+        </div>
+        <div className={styles["footer__last-row"]}>
+          <a href="">© Илья Давыдов 2023</a>
+          <a href="">Карта сайта</a>
+          <a href="">Разработка сайта TravelWeb</a>
+          <a href="https://www.instagram.com/nastaway/" className={styles["footer__designer"]}>Дизайн сайта разработан
+          <DesignerLogo className={styles["footer__designer-logo"]} /></a>
         </div>
       </Container>
     </footer>

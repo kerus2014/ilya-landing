@@ -14,7 +14,14 @@ export const SimpleSlider = (props:IProps) => {
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      variableWidth: true
+      variableWidth: true,
+      // mobileFirst: true,
+      // responsive: [
+      //     {
+      //       breakpoint: 5000,
+      //       settings: "unslick",
+      //     }
+      // ]
     };
 
     return (

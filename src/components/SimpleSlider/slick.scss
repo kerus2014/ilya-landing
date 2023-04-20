@@ -20,7 +20,7 @@
     opacity: 1;
   }
 
-  @media (max-width:1256px) {
+  @media (max-width:1305px) {
     display: none!important;
   }
 
@@ -39,7 +39,10 @@
 
 .slick-next::before, .slick-prev::before{
   opacity: 1;
-
+  font-family: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
 
 }
 

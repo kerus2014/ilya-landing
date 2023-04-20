@@ -5,6 +5,8 @@ $padding: 10px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  flex-grow: 1;
 
   div h4{
     @media (max-width:690px) {

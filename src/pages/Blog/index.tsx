@@ -25,7 +25,30 @@ export const Blog = () => {
       to: "/blog/myexperience",
     },
   ];
+
+  const navHashTagsData: InnerNavData[] = [
+    {
+      id: 1,
+      value: "#история",
+      to: "/blog/hash_history",
+    },
+    {
+      id: 2,
+      value: "#гастротуризм",
+      to: "/blog/hash_gastrotourism",
+    },
+    {
+      id: 3,
+      value: "#бизнес",
+      to: "/blog/hash_business",
+    },
+    {
+      id: 4,
+      value: "#мой опыт",
+      to: "/blog/hash_myexperience",
+    },
+  ];
   return (
-    <BlockWithNav title="Блог" navData={navbarData} navTitle="Категории:" />
+    <BlockWithNav title="Блог" navData={navbarData} navTitle="Категории:" navTitleSecond="Популярные теги:" navDataSecond={navHashTagsData}/>
   );
 };

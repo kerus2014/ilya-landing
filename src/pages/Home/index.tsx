@@ -77,7 +77,7 @@ export const Home = () => {
         <TitleWithBottomLine title="Проекты" />
 
         {projectCardsData.map((elem, index) => (
-          <ProjectCard card={elem} />
+          <ProjectCard card={elem}/>
         ))}
       </BlockTemplate>
       <BlockTemplate className={styles.cooperation}>
@@ -101,7 +101,7 @@ export const Home = () => {
 
         <div className={styles["blog__card-container"]}>
           <SimpleSlider>
-            {blogCardData.map((elem, index) => (
+            {blogCardData.slice(0,4).map((elem, index) => (
               <BlogCard key={index} card={elem} />
             ))}
           </SimpleSlider>

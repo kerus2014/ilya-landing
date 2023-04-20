@@ -1,5 +1,6 @@
 import { InnerNavData } from "../../types";
 import { BlockWithNav } from "../../components/BlockWithNav";
+import styles from "./index.module.scss";
 
 export const Projects = () => {
   const navbarData: InnerNavData[] = [
@@ -25,5 +26,5 @@ export const Projects = () => {
     },
   ];
 
-  return <BlockWithNav title="Проекты" navData={navbarData} />;
+  return <BlockWithNav title="Проекты" navData={navbarData}/>;
 };

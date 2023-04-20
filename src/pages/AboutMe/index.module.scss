@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .history {
-  padding: 50px 0px;
+  padding: 26px 0px 0px;
   position: relative;
 
   &__content-container {
@@ -56,11 +56,16 @@
     @media (max-width:960px) {
       position: absolute;
       padding-right: 28px;
-      top:146px;
+      top:128px;
     }
 
     @media (max-width:576px) {
-      top: 130px;
+      top: 110px;
+      padding-right: 24px;
+    }
+
+    @media (max-width:480px) {
+      padding-right: 18px;
     }
 
   }
@@ -129,6 +134,9 @@
 }
 
 .interests {
+
+  padding: 0px;
+
   &__row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -164,6 +172,13 @@
     @media (max-width:900px) {
       display: none;
     }
+  }
+
+  &__last-paragraph{
+    margin-top: 20px;
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 400;
   }
 }
 

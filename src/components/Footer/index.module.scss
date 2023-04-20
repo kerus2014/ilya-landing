@@ -13,7 +13,6 @@
 }
 
 .footerLeftSide {
-  width: calc(100% / 12 * 7);
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -39,7 +38,7 @@
 }
 
 .footerRightSide {
-  width: calc(100% / 12 * 4);
+  flex: 0 0 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,6 +48,11 @@
   }
 
   @media (max-width:896px) {
+    flex:0 0 50%;
+  }
+
+  @media (max-width:735px) {
+    flex:1 1 100%;
     width: 100%;
   }
 
@@ -64,7 +68,8 @@
 .contactBlockContainer {
   display: flex;
   justify-content: space-between;
-  max-width: 400px;
+  max-width: 450px;
+  gap: 20px;
   margin-bottom: 20px;
 
   @media (max-width:896px) {
@@ -86,7 +91,12 @@
 .contactBlock {
   width: 50%;
 
- 
+  @media (max-width:735px) {
+    flex-direction: row;
+    gap:30px;
+    width: 100%;
+  }
+  
 }
 
 .linksContainer {
@@ -102,7 +112,7 @@
 
 .footer {
   background-color: $textColor;
-  padding: 80px 0px;
+  padding: 100px 0px 20px;
 
   & .subtitle {
     color: $primaryColor;
@@ -114,37 +124,42 @@
     font-size: 14px;
     margin-top: 0px !important;
     margin-bottom: 3px;
-    width: 100%;
-    min-width: 284px;
-
-    @media (max-width:1200px) {
-      position: absolute;
-      width: fit-content;
-      left:50%;
-      transform: translate(-50%, 0);
-      bottom: -70px;
-    }
-
-    @media (max-width:735px) {
-      left:50%;
-      transform: translate(-50%, 0);
-      bottom: -70px;
-    }
-
-    @media (max-width:480px) {
-      // scale: 0.8;
-      left: 0;
-      transform: translate(0, 0);
-    }
   }
 
   &__designer-logo {
     margin-left: 4px;
     position: relative;
     top: 5px;
+  }
 
-    &:hover {
-      opacity: 0.6;
+  &__last-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+
+    a{
+      font-size: 14px;
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+
+    &>a::after{
+      content: "";
+      position: relative;
+      bottom: -3px;
+      height: 16px;
+      width: 1px;
+      background-color: white;
+      display: inline-block;
+      margin:0px 8px;
+    }
+
+    &>a:last-child::after{
+      display: none;
     }
   }
 }

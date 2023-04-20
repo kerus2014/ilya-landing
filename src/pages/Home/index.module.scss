@@ -2,7 +2,7 @@
 
 .banner {
   display: flex;
-  padding-bottom: 100px;
+  padding:26px 0px 100px;
 
   @media (max-width:850px) {
     flex-direction: column;
@@ -38,6 +38,7 @@
     line-height: 44px;
     color: $primaryColor;
     padding-bottom: 40px;
+    text-transform: uppercase;
 
     @media (max-width:935px) {
       padding-bottom: auto;
@@ -131,12 +132,27 @@
 
 .projects{
   background-color:#FAFAFA;
+
+  div{
+
+    div:last-child{
+      border-bottom: none;
+      padding-bottom: 0px;
+    } 
+  }
+
+  
+  
 }
 
 .cooperation {
 
   p{
     margin-top: 30px;
+  }
+
+  p:first-child{
+    margin-top: 0px;
   }
 }
 
