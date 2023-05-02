@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { IProjectCard } from "../../types";
 import { LinkWithArrow } from "../LinkWithArrow";
 import styles from "./index.module.scss";
+import { LinkWithArrowBlue } from "../LinkWithArrow/LinkWithArrowBlue";
 interface IProps {
   card: IProjectCard;
 }
@@ -30,7 +31,7 @@ const ProjectCard = (props: IProps) => {
           </div>
           <div className={styles["project-card__link-container"]}>
             <LinkWithArrow value={firstLinkValue} href={firstLinkPath} />
-            <LinkWithArrow value={"Подробнее"} onClick={() => navigate(secondLinkPath)}/>
+            <LinkWithArrowBlue value={"Подробнее"} onClick={() => navigate(secondLinkPath)}/>
           </div>
         </div>
       </div>

@@ -13,15 +13,25 @@
   border: 1px solid $textColor;
   cursor: pointer;
 
-  &:hover{
-    opacity: 0.8;
+  @media (max-width:720px) {
     border-color:$primaryColor;
     color: white;
     background-color: $primaryColor;
+  }
+
+  &:hover{
+    border-color:$primaryColor;
+    color: white;
+    background-color: $primaryColor;
+
+    @media (max-width:720px) {
+      opacity: 0.8;
+    }
   }
 
   &:active{
     outline: 2px solid #189EFF;
     box-shadow: inset 0px 4px 16px rgba(0, 0, 0, 0.25);
   }
+
 }

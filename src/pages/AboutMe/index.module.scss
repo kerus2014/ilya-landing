@@ -87,7 +87,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 
-    @media (max-width:520px) {
+    @media (max-width:576px) {
       grid-template-columns: 1fr;
     }
 
@@ -122,6 +122,13 @@
     flex:0 0 100px;
     display: flex;
     justify-content: center;
+
+    @media (max-width:576px) {
+      font-size: 34px;
+      line-height: 40px;
+      justify-content: end;
+      flex-basis: auto;
+    }
 
     @media (max-width:520px) {
       justify-content: end;

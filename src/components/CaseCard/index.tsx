@@ -1,7 +1,7 @@
-import { LinkWithArrow } from "../LinkWithArrow";
 import styles from "./index.module.scss";
 import { ICaseCard } from "../../types";
 import { useNavigate } from "react-router-dom";
+import { LinkWithArrowBlue } from "../LinkWithArrow/LinkWithArrowBlue";
 
 export const CaseCard = (props: ICaseCard) => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ export const CaseCard = (props: ICaseCard) => {
           <img src={image} alt="" />
         </div>
         <p className={styles["case-card__description"]}>{description}</p>
-        <LinkWithArrow
+        <LinkWithArrowBlue
           value="Подробнее"
           onClick={() => navigate(navigatePath)}
         />

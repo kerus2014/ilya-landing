@@ -1,8 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { ClassName, IBlogCardData } from "../../types";
-import { LinkWithArrow } from "../LinkWithArrow";
 import styles from "./index.module.scss";
-import cn from "classnames";
+import { LinkWithArrowBlue } from "../LinkWithArrow/LinkWithArrowBlue";
 
 interface IProps extends ClassName {
   card: IBlogCardData;
@@ -26,7 +25,7 @@ const BlogCard = (props: IProps) => {
       <p>{text}</p>
       <p>{date}</p>
       <p className={styles["card__type"]}>{type}</p>
-      <LinkWithArrow value="Подробнее" onClick={() => navigateTo(id)} />
+      <LinkWithArrowBlue value="Подробнее" onClick={() => navigateTo(id)} />
     </div>
   );
 };

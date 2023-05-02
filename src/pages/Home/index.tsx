@@ -32,7 +32,7 @@ export const Home = () => {
       <BlockTemplate className={styles.banner}>
         <div className={styles["banner__container"]}>
           <div className={styles["banner__left"]}>
-            <Title title="Илья Давыдов" />
+            <Title title="Илья Давыдов" className={styles["banner__title"]}/>
             <h2 className={styles["banner__subtitle"]}>
               Туризм. Технологии. Будущее.
             </h2>

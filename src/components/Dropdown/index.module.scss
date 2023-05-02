@@ -34,13 +34,13 @@
       height: auto;
       top: 70px;
       opacity: 1;
-      padding: 8px 15px;
+      padding: 15px 15px;
       border: 1px solid $primaryColor;
     }
   }
 
   &__item{
-    height: 48px;
+    // height: 48px;
     display: flex;
     align-items: center;
     width: 100%;

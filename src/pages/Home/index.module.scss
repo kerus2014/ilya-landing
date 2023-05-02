@@ -8,6 +8,18 @@
     flex-direction: column;
   }
 
+  @media (max-width:576px) {
+    padding:20px 0px 50px;
+  }
+
+  &__title{
+
+    @media (max-width:576px) {
+      margin: 0px 0px 20px 0px!important;
+    }
+    
+  }
+
   &__left {
 
     @media (max-width:935px) {
@@ -20,8 +32,11 @@
       @media (max-width:850px) {
         margin-top: 40px;
       }
-    }
 
+      @media (max-width:576px) {
+        margin-top: 20px;
+      }
+    }
     
   }
 
@@ -48,6 +63,7 @@
       padding-bottom: auto;
       font-size: 30px;
       line-height: 36px;
+      padding-bottom: 20px;
     }
   }
 
@@ -56,6 +72,10 @@
 
     @media (max-width:935px) {
       padding-top: auto;
+    }
+
+    @media (max-width:935px) {
+      padding-top: 20px;
     }
 
     button{

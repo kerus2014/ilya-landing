@@ -5,6 +5,7 @@ import { etnoImages } from "../../../services/etnoImagesData";
 import { cases } from "../../../services/cases";
 import { CaseCard } from "../../../components/CaseCard";
 import { useNavigate } from "react-router-dom";
+import { LinkWithArrowBlue } from "../../../components/LinkWithArrow/LinkWithArrowBlue";
 
 export const Etno = () => {
   const navigate = useNavigate()
@@ -17,7 +18,7 @@ export const Etno = () => {
         </div>
         <div className={styles["etno__title-container"]}>
           <p>Сувениры со смыслом</p>
-          <LinkWithArrow value="Перейти на сайт" href="https://etno.by/" />
+          <LinkWithArrowBlue value="Перейти на сайт" href="https://etno.by/" />
         </div>
       </div>
       <p>

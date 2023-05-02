@@ -5,7 +5,7 @@ const FeedBackForm = () => {
     <div className={styles.container}>
       <div>
         <h3 className={styles.title}>
-          Давайте знакомится, встречаться и работать <span>вместе</span>!
+          Давайте знакомиться, встречаться и работать <span>вместе</span>!
         </h3>
         <h4>Оставьте заявку, я Вам перезвоню для обсуждения сотрудничества:</h4>
       </div>
