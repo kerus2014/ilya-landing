@@ -17,7 +17,7 @@ export const blogCardData = [
     image: logo2,
     text: "Концертный зал из соломы для серии концертов 4-х стихий",
     date: "12.05.2021",
-    type: "События",
+    type: "Туризм",
     path: `/blog/events/`,
   },
   {
@@ -25,7 +25,7 @@ export const blogCardData = [
     image: logo3,
     text: "Бренд Беларуси - Драники. В чем же их уникальность?",
     date: "08.11.2018",
-    type: "События",
+    type: "Бизнес",
     path: `/blog/events/`,
   },
   {

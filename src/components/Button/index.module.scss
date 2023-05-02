@@ -6,15 +6,18 @@
   font-size: 20px;
   line-height: 30px;
   outline: none;
-  background-color: $primaryColor;
-  color: white;
-  font-weight: 500;
+  background: none;
+  color: $textColor;
+  font-weight: 400;
   letter-spacing: 0.4px;
-  border: none;
+  border: 1px solid $textColor;
   cursor: pointer;
 
   &:hover{
     opacity: 0.8;
+    border-color:$primaryColor;
+    color: white;
+    background-color: $primaryColor;
   }
 
   &:active{

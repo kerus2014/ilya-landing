@@ -15,6 +15,7 @@ export const SimpleSlider = (props:IProps) => {
       speed: 300,
       slidesToShow: 1,
       variableWidth: true,
+      centermode:true,
       // mobileFirst: true,
       // responsive: [
       //     {
